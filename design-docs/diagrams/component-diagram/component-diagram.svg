@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1452px" preserveAspectRatio="none" style="width:1540px;height:1452px;background:#FFFFFF;" version="1.1" viewBox="0 0 1540 1452" width="1540px" zoomAndPan="magnify"><defs/><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="184" x="671.645" y="16.708">Component Diagram</text><!--MD5=[8ae77ada6169822435c3d3bcb01b6727]
+cluster system--><rect fill="#FFFFFF" height="1001" style="stroke:#444444;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="1239" x="97.29" y="293.9531"/><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="208" x="612.79" y="310.8047">Tagged Image Manager</text><text fill="#444444" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="62" x="685.79" y="325.7168">[System]</text><!--MD5=[bbdf8ef771333c5b2f6f2c61526c6832]
+entity api_gw--><rect fill="#85BBF0" height="85.1875" style="stroke:#78A8D8;stroke-width:1.5;" width="133" x="802.79" y="344.9531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="113" x="812.79" y="369.8047">API Gateway</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="14" x="862.29" y="384.7168">[ ]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="871.29" y="400.542"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="873.29" y="416.8389"/><!--MD5=[2462e6ac78274bca3568a3a065e50bdf]
+entity images_get--><rect fill="#85BBF0" height="85.1875" style="stroke:#78A8D8;stroke-width:1.5;" width="196" x="918.29" y="670.9531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="176" x="928.29" y="695.8047">Images GET handler</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="56" x="988.29" y="710.7168">[lambda]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1018.29" y="726.542"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1020.29" y="742.8389"/><!--MD5=[fdb1fc1773df0fdc9f668c73aaccc26b]
+entity images_post--><rect fill="#85BBF0" height="85.1875" style="stroke:#78A8D8;stroke-width:1.5;" width="200" x="1002.29" y="900.9531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="180" x="1012.29" y="925.8047">Image POST handler</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="56" x="1074.29" y="940.7168">[lambda]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1104.29" y="956.542"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1106.29" y="972.8389"/><!--MD5=[f7afa346b4a36d14b21295321f6e72d7]
+entity image_get--><rect fill="#85BBF0" height="85.1875" style="stroke:#78A8D8;stroke-width:1.5;" width="186" x="1126.29" y="670.9531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="166" x="1136.29" y="695.8047">Image GET handler</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="56" x="1191.29" y="710.7168">[lambda]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1221.29" y="726.542"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1223.29" y="742.8389"/><!--MD5=[2be8b73bcc98747f01353863ed5e88e8]
+entity image_put--><rect fill="#85BBF0" height="85.1875" style="stroke:#78A8D8;stroke-width:1.5;" width="187" x="1133.79" y="785.9531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="167" x="1143.79" y="810.8047">Image PUT handler</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="56" x="1199.29" y="825.7168">[lambda]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1229.29" y="841.542"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1231.29" y="857.8389"/><!--MD5=[72aaa6a649d7b4a18215de040d288d6d]
+entity image_del--><rect fill="#85BBF0" height="85.1875" style="stroke:#78A8D8;stroke-width:1.5;" width="216" x="399.29" y="546.4531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="196" x="409.29" y="571.3047">Image DELETE handler</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="56" x="479.29" y="586.2168">[lambda]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="509.29" y="602.042"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="511.29" y="618.3389"/><!--MD5=[5bfe1f2b1c443c6774176225f501c942]
+entity tags_get--><rect fill="#85BBF0" height="85.1875" style="stroke:#78A8D8;stroke-width:1.5;" width="174" x="122.29" y="900.9531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="154" x="132.29" y="925.8047">Tags GET handler</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="56" x="181.29" y="940.7168">[lambda]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="211.29" y="956.542"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="213.29" y="972.8389"/><!--MD5=[f4cf41239434c32cb15029f4f5c80fb5]
+entity tags_post--><rect fill="#85BBF0" height="85.1875" style="stroke:#78A8D8;stroke-width:1.5;" width="178" x="149.29" y="670.9531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="158" x="159.29" y="695.8047">Tag POST handler</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="56" x="210.29" y="710.7168">[lambda]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="240.29" y="726.542"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="242.29" y="742.8389"/><!--MD5=[b64b4cb39882627a38eed17e4fce3dde]
+entity tag_get--><rect fill="#85BBF0" height="85.1875" style="stroke:#78A8D8;stroke-width:1.5;" width="174" x="268.29" y="785.9531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="154" x="278.29" y="810.8047">Tags GET handler</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="56" x="327.29" y="825.7168">[lambda]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="357.29" y="841.542"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="359.29" y="857.8389"/><!--MD5=[b7bdbc0c6a83e3a60c9ca972ae32b4c2]
+entity tag_post--><rect fill="#85BBF0" height="85.1875" style="stroke:#78A8D8;stroke-width:1.5;" width="178" x="379.29" y="900.9531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="158" x="389.29" y="925.8047">Tag POST handler</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="56" x="440.29" y="940.7168">[lambda]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="470.29" y="956.542"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="472.29" y="972.8389"/><!--MD5=[757cfd893ae9a90add27ce1dcd423986]
+entity tag_del--><rect fill="#85BBF0" height="85.1875" style="stroke:#78A8D8;stroke-width:1.5;" width="194" x="861.29" y="1015.9531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="174" x="871.29" y="1040.8047">Tag DELETE handler</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="56" x="930.29" y="1055.7168">[lambda]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="960.29" y="1071.542"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="962.29" y="1087.8389"/><!--MD5=[02a9e27be4cb88babccf8fc5f6156bd9]
+entity search_images--><rect fill="#85BBF0" height="103.8125" style="stroke:#78A8D8;stroke-width:1.5;" width="157" x="934.79" y="536.9531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="131" x="944.79" y="561.8047">Search Images</text><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="66" x="980.29" y="580.4297">handler</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="56" x="985.29" y="595.3418">[lambda]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1015.29" y="611.167"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1017.29" y="627.4639"/><!--MD5=[2084eabca2df588db227bf45c1f47c0c]
+entity upload--><rect fill="#85BBF0" height="85.1875" style="stroke:#78A8D8;stroke-width:1.5;" width="211" x="650.79" y="546.4531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="191" x="660.79" y="571.3047">Upload Image handler</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="56" x="728.29" y="586.2168">[lambda]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="758.29" y="602.042"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="760.29" y="618.3389"/><!--MD5=[c125e29818fecfd8e88c1c4a17ff3f84]
+entity s3_hook--><rect fill="#85BBF0" height="85.1875" style="stroke:#78A8D8;stroke-width:1.5;" width="155" x="633.79" y="1015.9531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="135" x="643.79" y="1040.8047">s3 upload hook</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="56" x="683.29" y="1055.7168">[lambda]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="713.29" y="1071.542"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="715.29" y="1087.8389"/><!--MD5=[ef0936c7077523d10d6c0fffed99e338]
+entity migrations--><rect fill="#85BBF0" height="85.1875" style="stroke:#78A8D8;stroke-width:1.5;" width="179" x="113.79" y="1015.9531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="159" x="123.79" y="1040.8047">Migrations runner</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="56" x="175.29" y="1055.7168">[lambda]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="205.29" y="1071.542"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="207.29" y="1087.8389"/><!--MD5=[b165ca7cce796f881c879adda4a6bef9]
+entity s3--><rect fill="#85BBF0" height="52.5938" style="stroke:#78A8D8;stroke-width:1.5;" width="110" x="633.29" y="801.9531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="90" x="643.29" y="826.8047">s3 Bucket</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="10" x="683.29" y="841.7168">[]</text><!--MD5=[7468467f3b6b392f1d176d828c753b77]
+entity db--><rect fill="#85BBF0" height="71.2188" style="stroke:#78A8D8;stroke-width:1.5;" width="149" x="674.79" y="1207.9531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="123" x="684.79" y="1232.8047">Postgres RDS</text><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="77" x="710.79" y="1251.4297">Instance</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="10" x="744.29" y="1266.3418">[]</text><!--MD5=[a237f9f665c8ad6fc6141731826af3fb]
+entity dynamo--><rect fill="#85BBF0" height="66.5625" style="stroke:#78A8D8;stroke-width:1.5;" width="198" x="512.29" y="353.9531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="178" x="522.29" y="378.8047">Dynamo Access Log</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="171" x="523.79" y="393.7168">[Authenticated requests to</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="176" x="523.29" y="407.6855">each endpoint logged here]</text><!--MD5=[032af2c3e41c32093a8b8ac5bd6ed8a1]
+entity cloudwatch--><rect fill="#85BBF0" height="71.2188" style="stroke:#78A8D8;stroke-width:1.5;" width="219" x="142.79" y="351.9531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="141" x="178.79" y="376.8047">Cloudwatch Log</text><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="54" x="225.29" y="395.4297">Group</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="199" x="152.79" y="410.3418">[Structured logs available here]</text><!--MD5=[cb6c4976686247c7869e2784830c6cd6]
+entity categorizer--><rect fill="#08427B" height="38.625" style="stroke:#073B6F;stroke-width:1.5;" width="170" x="594.29" y="27.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="150" x="604.29" y="52.8047">Categorizer User</text><!--MD5=[49aeb26089c158505260b93e0b85d491]
+entity categorizer_app--><rect fill="#999999" height="38.625" style="stroke:#8A8A8A;stroke-width:1.5;" width="163" x="597.79" y="167.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="143" x="607.79" y="192.8047">Categorizer App</text><!--MD5=[055d0f8da2b06fab22da6707db3d1d9c]
+entity ml_sys--><rect fill="#999999" height="57.25" style="stroke:#8A8A8A;stroke-width:1.5;" width="181" x="1142.79" y="158.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="155" x="1152.79" y="183.8047">Machine Learning</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="142" x="1162.29" y="202.4297">Training System</text><!--MD5=[43c2329dbf92f8878914fa45585ea076]
+link api_gw to images_get--><path d="M936.02,409.1031 C993.43,430.8231 1072.63,471.1431 1109.29,536.9531 C1131.79,577.3331 1129.72,599.4831 1109.29,640.9531 C1104.58,650.5331 1097.89,659.1831 1090.24,666.8931 " fill="none" id="api_gw-to-images_get" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1086.41,670.5931,1095.6584,667.2069,1090.0023,667.1153,1090.0939,661.4592,1086.41,670.5931" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="0" x="1093.29" y="488.02"/><!--MD5=[803b7c930d13847f9d1441ecd7510888]
+link api_gw to images_post--><path d="M935.81,392.4031 C987.69,398.9531 1058.14,415.9931 1102.29,459.9531 C1127.7,485.2431 1120.9,501.5131 1126.29,536.9531 C1133.25,582.6531 1128.5,594.7831 1126.29,640.9531 C1125.68,653.7731 1120.46,744.2031 1115.29,755.9531 C1108.08,772.3731 1094.72,769.2031 1088.29,785.9531 C1074.8,821.1231 1079.94,863.9031 1087.53,895.8331 " fill="none" id="api_gw-to-images_post" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1088.77,900.8631,1090.5215,891.1713,1087.5842,896.0058,1082.7497,893.0685,1088.77,900.8631" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="0" x="1135.29" y="593.52"/><!--MD5=[2fc7cabc1bb7eab24bcd078ceaf11195]
+link api_gw to image_get--><path d="M935.96,393.8231 C1022.76,402.2631 1167.64,421.7531 1203.29,459.9531 C1254.64,514.9731 1244.43,609.4431 1232.05,665.9131 " fill="none" id="api_gw-to-image_get" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1230.93,670.9231,1236.7871,663.0052,1232.0147,666.0422,1228.9776,661.2697,1230.93,670.9231" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="0" x="1235.29" y="488.02"/><!--MD5=[0a629580a75a7bfe6443fe6264e9f256]
+link api_gw to image_put--><path d="M936.19,393.1331 C1031.38,401.1031 1199.39,420.4431 1244.29,459.9531 C1345.71,549.1831 1370.66,633.6531 1313.29,755.9531 C1308.83,765.4731 1302.41,774.1631 1295.05,781.9431 " fill="none" id="api_gw-to-image_put" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1291.37,785.6931,1300.5262,782.0649,1294.8696,782.1221,1294.8125,776.4655,1291.37,785.6931" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="0" x="1349.29" y="593.52"/><!--MD5=[571ea42a14c6a3b78f7c51179b44c2c2]
+link api_gw to image_del--><path d="M802.47,425.2731 C741.73,458.7531 651.97,508.2231 587.4,543.8031 " fill="none" id="api_gw-to-image_del" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="582.79,546.3431,592.6021,545.4935,587.1668,543.9258,588.7345,538.4906,582.79,546.3431" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="0" x="737.29" y="488.02"/><!--MD5=[3f05e2c9fd5e3da84ac7d9a82f5d9964]
+link api_gw to tags_get--><path d="M802.61,411.4531 C779.36,418.5631 752.93,425.6531 728.29,429.9531 C672.81,439.6331 267.25,426.0331 222.29,459.9531 C114.04,541.6231 126.95,622.0431 148.29,755.9531 C156.12,805.0531 174.85,858.7831 189.5,895.9131 " fill="none" id="api_gw-to-tags_get" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="191.45,900.8031,191.8475,890.9623,189.6054,896.1558,184.4118,893.9137,191.45,900.8031" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="0" x="157.29" y="593.52"/><!--MD5=[158d49a3630d46c62b3541591ce1b059]
+link api_gw to tags_post--><path d="M802.6,411.3731 C779.35,418.4831 752.92,425.5931 728.29,429.9531 C677.42,438.9731 305.45,428.7231 264.29,459.9531 C203.17,506.3331 213.16,606.4131 225.81,665.7031 " fill="none" id="api_gw-to-tags_post" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="226.88,670.6031,228.8593,660.9552,225.809,665.7192,221.045,662.6689,226.88,670.6031" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="0" x="270.29" y="488.02"/><!--MD5=[71115ad085d0d05ea02a59d6b18cdf29]
+link api_gw to tag_get--><path d="M802.56,411.1731 C779.31,418.2731 752.88,425.4131 728.29,429.9531 C644.99,445.3231 419.14,413.5231 348.29,459.9531 C315.87,481.2031 316.68,499.3331 307.29,536.9531 C296.1,581.8031 293.4,596.8731 307.29,640.9531 C312.19,656.4731 322.09,655.9031 328.29,670.9531 C342.8,706.1631 349.51,748.9331 352.62,780.8531 " fill="none" id="api_gw-to-tag_get" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="353.09,785.8831,356.2491,776.5547,352.6322,780.9041,348.2827,777.2872,353.09,785.8831" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="0" x="313.29" y="593.52"/><!--MD5=[f38e465b74225e569dd7748975341913]
+link api_gw to tag_post--><path d="M802.68,408.2031 C668.22,448.1031 376.94,534.7431 375.29,536.9531 C305.52,630.7931 426.78,673.9231 460.29,785.9531 C470.94,821.5531 472.51,863.7231 471.65,895.3131 " fill="none" id="api_gw-to-tag_post" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="471.47,900.6831,475.7507,891.8132,471.6271,895.6856,467.7547,891.5619,471.47,900.6831" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="0" x="381.29" y="593.52"/><!--MD5=[96ad5a22f5b2712c6e16239642fb5eec]
+link api_gw to tag_del--><path d="M872.25,430.0531 C874.33,459.8131 877.11,500.8431 879.29,536.9531 C891.34,736.4331 833.92,798.5431 903.29,985.9531 C906.55,994.7531 911.29,1003.3431 916.65,1011.3531 " fill="none" id="api_gw-to-tag_del" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="919.69,1015.7431,917.8646,1006.0649,916.8477,1011.6296,911.283,1010.6126,919.69,1015.7431" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="0" x="883.29" y="718.02"/><!--MD5=[6d1af9ccc88a8e7b6ca978f43c871302]
+link api_gw to search_images--><path d="M899.48,430.2731 C920.87,459.9131 949.79,499.9831 973.13,532.3131 " fill="none" id="api_gw-to-search_images" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="976.24,536.6131,974.2158,526.9745,973.3136,532.559,967.7291,531.6568,976.24,536.6131" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="0" x="959.29" y="488.02"/><!--MD5=[f09e739fb022a00c4cbdcb2e9c18c447]
+link api_gw to upload--><path d="M845.6,430.2731 C827.15,462.8631 801.54,508.0631 782.48,541.7231 " fill="none" id="api_gw-to-upload" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="779.95,546.1831,787.8696,540.3283,782.4169,541.834,780.9111,536.3813,779.95,546.1831" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="0" x="831.29" y="488.02"/><!--MD5=[2c951e426f4e6265310c58182f51c700]
+link images_get to db--><path d="M997.02,756.0231 C973.41,813.8031 942.42,918.8531 993.29,985.9531 C1023.13,1025.3131 1070.45,976.5931 1100.29,1015.9531 C1122.04,1044.6431 1123.33,1150.2931 1100.29,1177.9531 C1066.48,1218.5431 921.97,1233.6731 829.24,1239.2631 " fill="none" id="images_get-to-db" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="824.04,1239.5631,833.2541,1243.0417,829.0318,1239.2771,832.7964,1235.0548,824.04,1239.5631" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="0" x="999.29" y="948.02"/><!--MD5=[add9f684585c272d6afb25965cf061d0]
+link images_post to db--><path d="M1125.85,986.0031 C1151.41,1037.2531 1182.88,1124.1631 1137.29,1177.9531 C1098.6,1223.6131 930.98,1236.9831 829.13,1240.8731 " fill="none" id="images_post-to-db" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="824.03,1241.0631,833.1618,1244.7524,829.0271,1240.8918,832.8877,1236.7571,824.03,1241.0631" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="0" x="1165.29" y="1063.02"/><!--MD5=[71bc1c63a3c0a465cf5510c7f2913071]
+link image_get to db--><path d="M1140.76,756.0931 C1130.93,764.6431 1122.25,774.5731 1116.29,785.9531 C1098.78,819.4231 1094.36,840.1931 1116.29,870.9531 C1140.04,904.2531 1179.55,867.6531 1203.29,900.9531 C1247.93,963.5531 1188.44,1148.3731 1156.29,1177.9531 C1109.83,1220.7131 933.93,1235.1731 829.19,1240.0231 " fill="none" id="image_get-to-db" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="823.95,1240.2631,833.1237,1243.8468,828.9448,1240.0341,832.7574,1235.8551,823.95,1240.2631" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="0" x="1225.29" y="948.02"/><!--MD5=[f94cc4588111b9cc2682e7c4a007e4ef]
+link image_put to db--><path d="M1247.2,871.1331 C1278.54,943.5731 1328.34,1093.0831 1251.29,1177.9531 C1223.41,1208.6631 963.56,1229.1631 829.1,1237.8031 " fill="none" id="image_put-to-db" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="823.97,1238.1331,833.2032,1241.5606,828.9602,1237.8195,832.7013,1233.5764,823.97,1238.1331" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="0" x="1297.29" y="1063.02"/><!--MD5=[ce514232e3031fb3101b32b50c404f38]
+link image_del to db--><path d="M512.33,631.7331 C523.84,720.2831 555.84,932.5431 616.29,1100.9531 C629.32,1137.2531 630.81,1149.0031 656.29,1177.9531 C664.89,1187.7231 675.26,1196.7431 685.91,1204.7631 " fill="none" id="image_del-to-db" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="690.16,1207.9031,685.306,1199.3335,686.1412,1204.9284,680.5463,1205.7636,690.16,1207.9031" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="0" x="586.29" y="948.02"/><!--MD5=[21089f98cb431152ed9cd79f9f112730]
+link tags_get to db--><path d="M277.31,985.9831 C289.13,994.9831 300.69,1005.0831 310.29,1015.9531 C364.42,1077.1931 331.24,1129.8331 397.29,1177.9531 C439.68,1208.8331 579.22,1227.0331 669.36,1235.8531 " fill="none" id="tags_get-to-db" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="674.42,1236.3431,665.8503,1231.4893,669.4436,1235.8583,665.0746,1239.4516,674.42,1236.3431" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="0" x="354.29" y="1063.02"/><!--MD5=[28906fbbe84751a076cc2969c223c441]
+link tags_post to db--><path d="M231.16,756.0631 C227.67,789.9431 228.31,837.4631 251.29,870.9531 C268.62,896.1931 291.59,879.3631 313.29,900.9531 C315.49,903.1331 409.49,1098.4431 411.29,1100.9531 C439.74,1140.4931 446.8,1154.1231 489.29,1177.9531 C545,1209.1931 615.75,1225.4731 669.38,1233.8631 " fill="none" id="tags_post-to-db" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="674.52,1234.6431,666.2317,1229.3229,669.578,1233.8839,665.017,1237.2302,674.52,1234.6431" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="0" x="360.29" y="948.02"/><!--MD5=[673e6518e406178ac6e5f78e67259f29]
+link tag_get to db--><path d="M362.54,871.0031 C364.17,880.8131 365.85,891.2431 367.29,900.9531 C372.89,938.6331 359.73,952.6931 378.29,985.9531 C388.61,1004.4431 400.32,1000.9831 415.29,1015.9531 C481.18,1081.8031 471.09,1125.8231 548.29,1177.9531 C584.48,1202.3931 630.53,1218.0531 669.41,1227.8131 " fill="none" id="tag_get-to-db" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="674.6,1229.0931,666.8221,1223.0513,669.7459,1227.8939,664.9033,1230.8177,674.6,1229.0931" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="0" x="482.29" y="1063.02"/><!--MD5=[affa8b1c7fa792b53983dc642c15a797]
+link tag_post to db--><path d="M485.51,986.1731 C510.7,1045.5331 557.88,1150.2631 588.29,1177.9531 C611.13,1198.7431 641.51,1213.2331 669.73,1223.1231 " fill="none" id="tag_post-to-db" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="674.6,1224.7931,667.3869,1218.0871,669.871,1223.1693,664.7888,1225.6535,674.6,1224.7931" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="0" x="542.29" y="1063.02"/><!--MD5=[a5d175437b576f4f7dfd886991898d2d]
+link tag_del to db--><path d="M917.21,1100.9831 C893.57,1124.2931 862.96,1153.5131 834.29,1177.9531 C823.75,1186.9431 812.1,1196.1831 800.91,1204.7731 " fill="none" id="tag_del-to-db" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="796.81,1207.9031,806.3921,1205.6263,800.7858,1204.8712,801.541,1199.265,796.81,1207.9031" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="0" x="888.29" y="1159.02"/><!--MD5=[71bab007291d4b277ac7014c30bd3d55]
+link search_images to db--><path d="M938.03,641.2231 C929.66,650.1331 922.35,660.0731 917.29,670.9531 C901.37,705.2131 914.6,718.2731 917.29,755.9531 C924.65,858.9631 880.89,909.4831 950.29,985.9531 C988.11,1027.6231 1038.54,971.7031 1073.29,1015.9531 C1096.63,1045.6631 1093.97,1069.3331 1073.29,1100.9531 C1019.54,1183.1331 906.43,1217.8631 829.15,1232.3531 " fill="none" id="search_images-to-db" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="824.11,1233.2731,833.6898,1235.5595,829.0257,1232.3586,832.2265,1227.6944,824.11,1233.2731" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="0" x="956.29" y="948.02"/><!--MD5=[fe77947b21e5668e9461e19da67703a7]
+link upload to db--><path d="M763.11,631.5331 C777.52,722.0231 810.55,943.7031 820.29,1130.9531 C821.38,1151.8131 828.75,1158.8531 820.29,1177.9531 C816.07,1187.5031 809.65,1196.2531 802.36,1204.0131 " fill="none" id="upload-to-db" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="798.72,1207.7431,807.869,1204.0967,802.2125,1204.1651,802.1441,1198.5086,798.72,1207.7431" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="0" x="814.29" y="948.02"/><!--MD5=[bdbf5c74d2121d919e03ec9a24505cdb]
+link image_del to s3--><path d="M566.13,631.5731 C580.32,643.2931 594.72,656.7531 606.29,670.9531 C638.25,710.1631 663.06,763.7831 676.67,796.9931 " fill="none" id="image_del-to-s3" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="678.6,801.7431,678.9453,791.9003,676.7308,797.1057,671.5254,794.8911,678.6,801.7431" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="0" x="662.29" y="718.02"/><!--MD5=[8384d8a71eff70c1ad70e63c3ecd87d0]
+link upload to s3--><path d="M744.37,631.5931 C730.86,678.7631 709.17,754.5431 697.11,796.6731 " fill="none" id="upload-to-s3" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="695.68,801.6431,701.9986,794.0883,697.0536,796.8355,694.3064,791.8905,695.68,801.6431" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="0" x="738.29" y="718.02"/><!--MD5=[01b5b3d00493f459a6137d1dc4960f4b]
+link s3 to s3_hook--><path d="M666.18,855.0731 C656.52,867.9331 646.28,884.3031 641.29,900.9531 C630.46,937.1431 627.02,950.9731 641.29,985.9531 C645.07,995.2131 650.69,1003.9231 657.13,1011.8631 " fill="none" id="s3-to-s3_hook" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="660.36,1015.7031,657.6366,1006.2383,657.145,1011.8738,651.5096,1011.3822,660.36,1015.7031" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="144" x="642.29" y="933.02">Notifies when large</text><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="82" x="673.29" y="948.1528">upload has</text><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="75" x="679.29" y="963.2856">happened</text><!--MD5=[da771fb2cbe798814e4cdf42f04dc935]
+link s3_hook to db--><path d="M681.06,1101.1931 C668.21,1124.3131 658.58,1153.2731 670.29,1177.9531 C674.92,1187.7131 681.84,1196.4831 689.68,1204.1831 " fill="none" id="s3_hook-to-db" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="693.6,1207.8831,689.7877,1198.802,689.959,1204.4563,684.3047,1204.6276,693.6,1207.8831" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="139" x="671.29" y="1151.52">Marks upload time</text><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="134" x="676.29" y="1166.6528">and archive prefix</text><!--MD5=[c3b1f887ea34a44a536c0919dca2ca29]
+link migrations to db--><path d="M190.23,1101.0731 C185.09,1126.3131 184.11,1157.5031 202.29,1177.9531 C232.79,1212.2531 525.15,1231.3831 669.48,1238.8031 " fill="none" id="migrations-to-db" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="674.55,1239.0631,665.768,1234.6049,669.5566,1238.8056,665.3559,1242.5942,674.55,1239.0631" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="150" x="203.29" y="1144.02">Executes migrations</text><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="134" x="208.79" y="1159.1528">in lambda context</text><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="73" x="241.79" y="1174.2856">on deploy</text><!--MD5=[340933c0babbed179f2977aa87e0cc7b]
+link categorizer to categorizer_app--><path d="M679.29,67.0631 C679.29,91.7531 679.29,135.3831 679.29,162.5031 " fill="none" id="categorizer-to-categorizer_app" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="679.29,167.6931,683.29,158.6931,679.29,162.6931,675.29,158.6931,679.29,167.6931" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="118" x="680.29" y="110.02">Manage images</text><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="66" x="708.79" y="125.1528">and tags</text><!--MD5=[e754ccfac2dd1e233a19ece17fa945ee]
+link categorizer_app to s3--><path d="M597.57,194.2931 C462.47,205.3431 200.02,233.0531 125.29,285.9531 C37.6,348.0331 6,401.6431 27.29,506.9531 C51.1,624.6731 35.35,685.0531 132.29,755.9531 C191.37,799.1631 387.77,776.0531 460.29,785.9531 C517.6,793.7731 582.45,805.9031 628.29,815.0231 " fill="none" id="categorizer_app-to-s3" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="633.23,816.0131,625.1924,810.3213,628.3276,815.0298,623.6191,818.165,633.23,816.0131" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="132" x="28.29" y="480.52">Large uploads via</text><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="113" x="40.29" y="495.6528">pre-signed URL</text><!--MD5=[7edc2ade11718e944ebe9122354091d7]
+link categorizer_app to api_gw--><path d="M672.09,206.9631 C665.66,226.9331 659.59,258.4831 676.29,277.9531 C683.91,286.8231 717.46,281.5531 728.29,285.9531 C760.94,299.2231 793.26,321.4131 818.7,341.5731 " fill="none" id="categorizer_app-to-api_gw" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="822.72,344.7831,818.1871,336.0394,818.8143,341.6614,813.1923,342.2886,822.72,344.7831" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="143" x="677.29" y="259.02">Manage Image and</text><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="104" x="699.29" y="274.1528">Tag metadata</text><!--MD5=[7edc2ade11718e944ebe9122354091d7]
+link categorizer_app to api_gw--><path d="M760.87,204.2931 C786.12,212.8431 812.06,225.9431 830.29,245.9531 C853.5,271.4231 863.05,309.5331 866.91,339.6431 " fill="none" id="categorizer_app-to-api_gw-1" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="867.53,344.7831,870.4196,335.3677,866.9292,339.8194,862.4775,336.329,867.53,344.7831" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="91" x="850.29" y="259.02">Small Image</text><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="59" x="868.79" y="274.1528">uploads</text><!--MD5=[61fb440a97d660b8c8ba8a288512d294]
+link ml_sys to s3--><path d="M1256.7,216.0731 C1263.47,225.1431 1270.36,235.5631 1275.29,245.9531 C1373.05,451.9131 1497.02,600.4631 1330.29,755.9531 C1319.68,765.8531 905.97,806.5431 748.4,821.7131 " fill="none" id="ml_sys-to-s3" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="743.36,822.1931,752.7054,825.3016,748.3364,821.7083,751.9297,817.3393,743.36,822.1931" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="129" x="1398.29" y="473.02">Retrieve archived</text><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="80" x="1422.79" y="488.1528">images via</text><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="113" x="1408.79" y="503.2856">pre-signed URL</text><!--MD5=[4311649e982a3a5a5aadb60073b3850c]
+link ml_sys to api_gw--><path d="M1182.68,215.9831 C1119.7,250.2431 1011.76,308.9531 940.47,347.7331 " fill="none" id="ml_sys-to-api_gw" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="935.82,350.2631,945.6384,349.4896,940.2155,347.8799,941.8252,342.4569,935.82,350.2631" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="135" x="1126.29" y="259.02">Search for images</text><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="48" x="1172.29" y="274.1528">by tag</text><rect fill="#DDDDDD" height="128.0781" rx="5" ry="5" style="stroke:#000000;stroke-width:1.0;" width="199" x="1319.29" y="1307.9531"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="0" x="1395.29" y="1327.9482"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="39" x="1400.29" y="1327.9482">Type</text><rect fill="#08427B" height="16.2969" style="stroke:none;stroke-width:1.0;" width="70" x="1325.29" y="1331.25"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1349.29" y="1344.2451"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49" x="1399.29" y="1344.2451">person</text><rect fill="#686868" height="16.2969" style="stroke:none;stroke-width:1.0;" width="70" x="1325.29" y="1347.5469"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1349.29" y="1360.542"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="108" x="1399.29" y="1360.542">external person</text><rect fill="#1168BD" height="16.2969" style="stroke:none;stroke-width:1.0;" width="70" x="1325.29" y="1363.8438"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1337.29" y="1376.8389"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="50" x="1399.29" y="1376.8389">system</text><rect fill="#999999" height="16.2969" style="stroke:none;stroke-width:1.0;" width="70" x="1325.29" y="1380.1406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1349.29" y="1393.1357"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="109" x="1399.29" y="1393.1357">external system</text><rect fill="#438DD5" height="16.2969" style="stroke:none;stroke-width:1.0;" width="70" x="1325.29" y="1396.4375"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1337.29" y="1409.4326"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="1399.29" y="1409.4326">container</text><rect fill="#85BBF0" height="16.2969" style="stroke:none;stroke-width:1.0;" width="70" x="1325.29" y="1412.7344"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1337.29" y="1425.7295"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="1399.29" y="1425.7295">component</text><line style="stroke:#000000;stroke-width:1.0;" x1="1325.29" x2="1512.29" y1="1314.9531" y2="1314.9531"/><line style="stroke:#000000;stroke-width:1.0;" x1="1325.29" x2="1512.29" y1="1331.25" y2="1331.25"/><line style="stroke:#000000;stroke-width:1.0;" x1="1325.29" x2="1512.29" y1="1347.5469" y2="1347.5469"/><line style="stroke:#000000;stroke-width:1.0;" x1="1325.29" x2="1512.29" y1="1363.8438" y2="1363.8438"/><line style="stroke:#000000;stroke-width:1.0;" x1="1325.29" x2="1512.29" y1="1380.1406" y2="1380.1406"/><line style="stroke:#000000;stroke-width:1.0;" x1="1325.29" x2="1512.29" y1="1396.4375" y2="1396.4375"/><line style="stroke:#000000;stroke-width:1.0;" x1="1325.29" x2="1512.29" y1="1412.7344" y2="1412.7344"/><line style="stroke:#000000;stroke-width:1.0;" x1="1325.29" x2="1512.29" y1="1429.0313" y2="1429.0313"/><line style="stroke:#000000;stroke-width:1.0;" x1="1325.29" x2="1325.29" y1="1314.9531" y2="1429.0313"/><line style="stroke:#000000;stroke-width:1.0;" x1="1395.29" x2="1395.29" y1="1314.9531" y2="1429.0313"/><line style="stroke:#000000;stroke-width:1.0;" x1="1512.29" x2="1512.29" y1="1314.9531" y2="1429.0313"/><!--MD5=[221910ed37e96725e25339f45d8b8591]
+@startuml
+!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/release/1-0/C4_Component.puml
+
+LAYOUT_WITH_LEGEND()
+
+title Component Diagram
+
+Person(categorizer, "Categorizer User")
+
+System_Ext(categorizer_app, "Categorizer App")
+System_Ext(ml_sys, "Machine Learning Training System")
+
+System_Boundary(system, "Tagged Image Manager") {
+    Component(api_gw, "API Gateway", " ", " ")
+
+    Component(images_get, "Images GET handler", "lambda", " ")
+    Component(images_post, "Image POST handler", "lambda", " ")
+
+    Component(image_get, "Image GET handler", "lambda", " ")
+    Component(image_put, "Image PUT handler", "lambda", " ")
+    Component(image_del, "Image DELETE handler", "lambda", " ")
+
+    Component(tags_get, "Tags GET handler", "lambda", " ")
+    Component(tags_post, "Tag POST handler", "lambda", " ")
+
+    Component(tag_get, "Tags GET handler", "lambda", " ")
+    Component(tag_post, "Tag POST handler", "lambda", " ")
+    Component(tag_del, "Tag DELETE handler", "lambda", " ")
+
+    Component(search_images, "Search Images handler", "lambda", " ")
+
+    Component(upload, "Upload Image handler", "lambda", " ")
+
+    Component(s3_hook, "s3 upload hook", "lambda", " ")
+    Component(migrations, "Migrations runner", "lambda", " ")
+    
+    Component(s3, "s3 Bucket", "")
+    Component(db, "Postgres RDS Instance", "")
+    Component(dynamo, "Dynamo Access Log", "Authenticated requests to each endpoint logged here")
+
+    Component(cloudwatch, "Cloudwatch Log Group", "Structured logs available here")
+}
+
+Rel(api_gw, images_get, " ")
+Rel(api_gw, images_post, " ")
+Rel(api_gw, image_get, " ")
+Rel(api_gw, image_put, " ")
+Rel(api_gw, image_del, " ")
+Rel(api_gw, tags_get, " ")
+Rel(api_gw, tags_post, " ")
+Rel(api_gw, tag_get, " ")
+Rel(api_gw, tag_post, " ")
+Rel(api_gw, tag_del, " ")
+Rel(api_gw, search_images, " ")
+Rel(api_gw, upload, " ")
+
+Rel(images_get, db, " ")
+Rel(images_post, db, " ")
+Rel(image_get, db, " ")
+Rel(image_put, db, " ")
+Rel(image_del, db, " ")
+Rel(tags_get, db, " ")
+Rel(tags_post, db, " ")
+Rel(tag_get, db, " ")
+Rel(tag_post, db, " ")
+Rel(tag_del, db, " ")
+Rel(search_images, db, " ")
+Rel(upload, db, " ")
+
+Rel(image_del, s3, " ")
+Rel(upload, s3, " ")
+
+Rel(s3, s3_hook, "Notifies when large upload has happened")
+Rel(s3_hook, db, "Marks upload time and archive prefix")
+
+Rel(migrations, db, "Executes migrations in lambda context on deploy")
+
+Rel(categorizer, categorizer_app, "Manage images and tags")
+
+Rel(categorizer_app, s3, "Large uploads via pre-signed URL")
+Rel(categorizer_app, api_gw, "Manage Image and Tag metadata")
+Rel(categorizer_app, api_gw, "Small Image uploads")
+
+Rel(ml_sys, s3, "Retrieve archived images via pre-signed URL")
+Rel(ml_sys, api_gw, "Search for images by tag")
+
+@enduml
+
+@startuml
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam Arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 0
+    FontColor #444444
+    BorderColor #444444
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+skinparam database<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+skinparam database<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+skinparam database<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<component>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+
+skinparam database<<component>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+
+
+
+
+
+
+hide stereotype
+legend right
+|=              |= Type |
+|<#08427B>      | person |
+|<#686868>      | external person |
+|<#1168BD>   | system |
+|<#999999>      | external system |
+|<#438DD5>   | container |
+|<#85BBF0>   | component |
+endlegend
+
+title Component Diagram
+
+rectangle "==Categorizer User" <<person>> as categorizer
+
+rectangle "==Categorizer App" <<external_system>> as categorizer_app
+rectangle "==Machine Learning Training System" <<external_system>> as ml_sys
+
+rectangle "==Tagged Image Manager\n<size:12>[System]</size>" <<boundary>> as system {
+    rectangle "==API Gateway\n//<size:12>[ ]</size>//\n\n  " <<component>> as api_gw
+
+    rectangle "==Images GET handler\n//<size:12>[lambda]</size>//\n\n  " <<component>> as images_get
+    rectangle "==Image POST handler\n//<size:12>[lambda]</size>//\n\n  " <<component>> as images_post
+
+    rectangle "==Image GET handler\n//<size:12>[lambda]</size>//\n\n  " <<component>> as image_get
+    rectangle "==Image PUT handler\n//<size:12>[lambda]</size>//\n\n  " <<component>> as image_put
+    rectangle "==Image DELETE handler\n//<size:12>[lambda]</size>//\n\n  " <<component>> as image_del
+
+    rectangle "==Tags GET handler\n//<size:12>[lambda]</size>//\n\n  " <<component>> as tags_get
+    rectangle "==Tag POST handler\n//<size:12>[lambda]</size>//\n\n  " <<component>> as tags_post
+
+    rectangle "==Tags GET handler\n//<size:12>[lambda]</size>//\n\n  " <<component>> as tag_get
+    rectangle "==Tag POST handler\n//<size:12>[lambda]</size>//\n\n  " <<component>> as tag_post
+    rectangle "==Tag DELETE handler\n//<size:12>[lambda]</size>//\n\n  " <<component>> as tag_del
+
+    rectangle "==Search Images handler\n//<size:12>[lambda]</size>//\n\n  " <<component>> as search_images
+
+    rectangle "==Upload Image handler\n//<size:12>[lambda]</size>//\n\n  " <<component>> as upload
+
+    rectangle "==s3 upload hook\n//<size:12>[lambda]</size>//\n\n  " <<component>> as s3_hook
+    rectangle "==Migrations runner\n//<size:12>[lambda]</size>//\n\n  " <<component>> as migrations
+    
+    rectangle "==s3 Bucket\n//<size:12>[]</size>//" <<component>> as s3
+    rectangle "==Postgres RDS Instance\n//<size:12>[]</size>//" <<component>> as db
+    rectangle "==Dynamo Access Log\n//<size:12>[Authenticated requests to each endpoint logged here]</size>//" <<component>> as dynamo
+
+    rectangle "==Cloudwatch Log Group\n//<size:12>[Structured logs available here]</size>//" <<component>> as cloudwatch
+}
+
+api_gw - -> images_get : "=== "
+api_gw - -> images_post : "=== "
+api_gw - -> image_get : "=== "
+api_gw - -> image_put : "=== "
+api_gw - -> image_del : "=== "
+api_gw - -> tags_get : "=== "
+api_gw - -> tags_post : "=== "
+api_gw - -> tag_get : "=== "
+api_gw - -> tag_post : "=== "
+api_gw - -> tag_del : "=== "
+api_gw - -> search_images : "=== "
+api_gw - -> upload : "=== "
+
+images_get - -> db : "=== "
+images_post - -> db : "=== "
+image_get - -> db : "=== "
+image_put - -> db : "=== "
+image_del - -> db : "=== "
+tags_get - -> db : "=== "
+tags_post - -> db : "=== "
+tag_get - -> db : "=== "
+tag_post - -> db : "=== "
+tag_del - -> db : "=== "
+search_images - -> db : "=== "
+upload - -> db : "=== "
+
+image_del - -> s3 : "=== "
+upload - -> s3 : "=== "
+
+s3 - -> s3_hook : "===Notifies when large upload has happened"
+s3_hook - -> db : "===Marks upload time and archive prefix"
+
+migrations - -> db : "===Executes migrations in lambda context on deploy"
+
+categorizer - -> categorizer_app : "===Manage images and tags"
+
+categorizer_app - -> s3 : "===Large uploads via pre-signed URL"
+categorizer_app - -> api_gw : "===Manage Image and Tag metadata"
+categorizer_app - -> api_gw : "===Small Image uploads"
+
+ml_sys - -> s3 : "===Retrieve archived images via pre-signed URL"
+ml_sys - -> api_gw : "===Search for images by tag"
+
+@enduml
+
+PlantUML version 1.2021.12(Tue Oct 05 16:01:58 UTC 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>

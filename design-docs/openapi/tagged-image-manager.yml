@@ -1,0 +1,444 @@
+openapi: "3.0.0"
+info:
+  version: 1.0.0
+  title: Tagged Image Manager
+servers:
+  - url: http://PENDING/v1
+paths:
+# IMAGE endpoints
+  /images:
+    get:
+      summary: List all Images
+      description: Returns all images, newest created ones first.
+      operationId: listImages
+      tags:
+        - images
+      parameters:
+        - name: end_timestamp
+          in: query
+          description: Look for records created on or before this timestamp, in seconds since Unix Epoch
+          required: false
+          schema:
+            default: 0
+            type: integer
+            format: int32
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          required: false
+          schema:
+            default: 100
+            type: integer
+            format: int32
+        - name: page
+          in: query
+          description: Result page to return, 0 indexed
+          required: false
+          schema:
+            default: 0
+            type: integer
+            format: int32
+        - name: start_timestamp
+          in: query
+          description: Look for records created on or after this timestamp, in seconds since Unix Epoch
+          required: false
+          schema:
+            default: 0
+            type: integer
+            format: int32
+        - name: uploaded_only
+          in: query
+          description: Only include records where the actual image file is present
+          required: false
+          schema:
+            default: false
+            type: boolean
+      responses:
+        '200':
+          description: A paged array of Images
+          content:
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/ImageBrowsePage"
+    post:
+      summary: Create an Image Record, without uploading the Image
+      operationId: createImage
+      tags:
+        - images
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:    
+              type: object
+              $ref: "#/components/schemas/ImageCreateInput"
+      responses:
+        '201':
+          description: ID of new record along with URL to upload (PUT) the image to.
+          content:
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/ImageCreatedResponse"
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /images/{image_id}:
+    get:
+      summary: Get an individual Image Record
+      operationId: getImage
+      tags:
+        - images
+      responses:
+        '200':
+          description: An image record
+          content:
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/ImageRecord"
+    delete:
+      summary: Delete an individual Image Record
+      operationId: deleteImage
+      tags:
+        - images
+      responses:
+        '204':
+          description: Null response
+
+# TAG endpoints
+  /tags:
+    get:
+      summary: List all tags
+      description: Returns all tags, in alphabetical order
+      operationId: listTags
+      tags:
+        - tags
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          required: false
+          schema:
+            default: 100
+            type: integer
+            format: int32
+        - name: page
+          in: query
+          description: Result page to return, 0 indexed
+          required: false
+          schema:
+            default: 0
+            type: integer
+            format: int32
+      responses:
+        '200':
+          description: A paged array of tags
+          content:
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/TagBrowsePage"
+    post:
+      summary: Create an Tag Record
+      operationId: createTag
+      tags:
+        - tags
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:    
+              type: object
+              $ref: "#/components/schemas/TagCreateInput"
+      responses:
+        '201':
+          description: ID of new record along with URL to upload (PUT) the image to.
+          content:
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/ImageCreatedResponse"
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /tags/{tag_id}:
+    get:
+      summary: Get an individual Tag Record
+      operationId: getImage
+      tags:
+        - tags
+      responses:
+        '200':
+          description: An tag record
+          content:
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/ImageRecord"
+    delete:
+      summary: Delete an individual Tag Record
+      description: Does not delete associated images
+      operationId: deleteImage
+      tags:
+        - tags
+      responses:
+        '204':
+          description: Null response
+  /tags/{tag_id}/images:
+    get:
+      summary: Get images associated with a Tag Record
+      operationId: getImage
+      tags:
+        - tags
+      responses:
+        '200':
+          description: An page of image records
+          content:
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/ImageBrowsePage"
+
+  # search
+  /search/images:
+    get:
+      summary: Search for images created within date range having one or more tags. Newest images are returned first.
+      operationId: searchImages
+      tags:
+        - search
+      parameters:
+        - name: end_timestamp
+          in: query
+          description: Look for records created on or before this timestamp, in seconds since Unix Epoch
+          required: false
+          schema:
+            default: 0
+            type: integer
+            format: int32
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          required: false
+          schema:
+            default: 100
+            type: integer
+            format: int32
+        - name: page
+          in: query
+          description: Result page to return, 0 indexed
+          required: false
+          schema:
+            default: 0
+            type: integer
+            format: int32
+        - name: start_timestamp
+          in: query
+          description: Look for records created on or after this timestamp, in seconds since Unix Epoch
+          required: false
+          schema:
+            default: 0
+            type: integer
+            format: int32
+        - name: exact_tags
+          in: query
+          required: true
+          description: One or more exact tags (case sensitive) which must be present on the image, pipe delimited.
+          style: pipeDelimited
+          example: 'foo, bar, baz: `exact_tags%3Dfoo%7Cbar%7Cbaz`'
+          schema:
+            type: array
+            items:
+              type: string
+        - name: match_tags
+          in: query
+          required: true
+          description: One or more tags which must match on the image, case insensitive, supports `%` as wildcard, pipe delimited.
+          style: pipeDelimited
+          example: 'fo.*, ba.* => `match_tags%3Dfo%25%7Cba%25`'
+          schema:
+            type: array
+            items:
+              type: string
+        - name: uploaded_only
+          in: query
+          description: Only include records where the actual image file is present
+          required: false
+          schema:
+            default: false
+            type: boolean
+      responses:
+        '200':
+          description: An page of image records
+          content:
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/ImageBrowsePage"
+  /upload:
+    post:
+      summary: Upload an Image and create an Image Record in one shot.
+      description: Use this endpoint to upload images less then ~ 3.5MB and create records in one shot.
+      operationId: uploadImage
+      tags:
+        - upload
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:    
+              type: object
+              $ref: "#/components/schemas/UploadCreateInput"
+      responses:
+        '201':
+          description: ID of new record along with URL to upload (PUT) the image to.
+          content:
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/ImageCreatedResponse"
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+components:
+  schemas:
+    # basic Image constructs
+    ImageCreateInput:
+      type: object
+      properties:
+        filename:
+          type: string
+        size:
+          type: integer      
+        tags:
+          type: array
+          items:
+            type: string
+    ImageCreatedResponse:
+      type: object
+      properties:
+        id:
+          type: integer
+        upload_url:
+          description: Presigned s3 URL to PUT the image to.
+          type: string
+    ImageUpdateInput:
+      type: object
+      properties:
+        tags:
+          type: array
+          items:
+            type: string
+    ImageRecord:
+      type: object
+      properties:
+        id:
+          type: integer
+        created_by:
+          description: User or system which created this record
+          type: string
+        created_timestamp:
+          description: Creation time of record in seconds since Epoch
+          type: integer
+        filename:
+          type: string
+        size:
+          type: integer      
+        tags:
+          type: array
+          items:
+            $ref: '#/components/schemas/Tag'
+        uploaded_timestamp:
+          type: integer
+          nullable: true
+          description: Upload time of related image in seconds since Epoch
+        url:
+          type: string
+          nullable: true
+          description: If the image has been uploaded, a time-limited pre-signed URL which can be used to retrieve it.
+    ImageRecords:
+      type: array
+      items:
+        $ref: "#/components/schemas/ImageRecord"
+    ImageBrowsePage:
+      type: object
+      properties:        
+        results:
+          $ref: "#/components/schemas/ImageRecords"
+        meta:
+          $ref: "#/components/schemas/PageMeta"
+    # basic Tag constructs
+    Tag:
+      type: object
+      required:
+        - id
+        - name
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+    Tags:
+      type: array
+      items:
+        $ref: "#/components/schemas/Tag"
+    TagBrowsePage:
+      type: object
+      properties:        
+        results:
+          $ref: "#/components/schemas/Tags"
+        meta:
+          $ref: "#/components/schemas/PageMeta"
+    TagCreateInput:
+      type: object
+      properties:
+        name:
+          type: string
+    TagUpdateInput:
+      type: object
+      properties:
+        name:
+          type: string
+
+    # upload combination endpoint
+    UploadCreateInput:
+      type: object
+      description: Input to combination upload endpoint. Entire payload must not exceed 3.96 MB.
+      properties:
+        filename:
+          type: string
+        image_data:
+          format: byte
+          type: string
+          description: Base 64 encoded image data
+        tags:
+          type: array
+          items:
+            type: string
+
+    # paging support type
+    PageMeta:
+      type: object
+      properties:
+        current_page:
+          type: integer
+        has_more_pages:
+          type: boolean
+        total_results:
+          type: integer
+    Error:
+      type: object
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string
+  securitySchemes:
+    openId:
+     type: openIdConnect
+     openIdConnectUrl: 

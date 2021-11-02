@@ -1,0 +1,87 @@
+@startuml
+!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/release/1-0/C4_Component.puml
+
+LAYOUT_WITH_LEGEND()
+
+title Component Diagram
+
+Person(categorizer, "Categorizer User")
+
+System_Ext(categorizer_app, "Categorizer App")
+System_Ext(ml_sys, "Machine Learning Training System")
+
+System_Boundary(system, "Tagged Image Manager") {
+    Component(api_gw, "API Gateway", " ", " ")
+
+    Component(images_get, "Images GET handler", "lambda", " ")
+    Component(images_post, "Image POST handler", "lambda", " ")
+
+    Component(image_get, "Image GET handler", "lambda", " ")
+    Component(image_put, "Image PUT handler", "lambda", " ")
+    Component(image_del, "Image DELETE handler", "lambda", " ")
+
+    Component(tags_get, "Tags GET handler", "lambda", " ")
+    Component(tags_post, "Tag POST handler", "lambda", " ")
+
+    Component(tag_get, "Tags GET handler", "lambda", " ")
+    Component(tag_post, "Tag POST handler", "lambda", " ")
+    Component(tag_del, "Tag DELETE handler", "lambda", " ")
+
+    Component(search_images, "Search Images handler", "lambda", " ")
+
+    Component(upload, "Upload Image handler", "lambda", " ")
+
+    Component(s3_hook, "s3 upload hook", "lambda", " ")
+    Component(migrations, "Migrations runner", "lambda", " ")
+    
+    Component(s3, "s3 Bucket", "")
+    Component(db, "Postgres RDS Instance", "")
+    Component(dynamo, "Dynamo Access Log", "Authenticated requests to each endpoint logged here")
+
+    Component(cloudwatch, "Cloudwatch Log Group", "Structured logs available here")
+}
+
+Rel(api_gw, images_get, " ")
+Rel(api_gw, images_post, " ")
+Rel(api_gw, image_get, " ")
+Rel(api_gw, image_put, " ")
+Rel(api_gw, image_del, " ")
+Rel(api_gw, tags_get, " ")
+Rel(api_gw, tags_post, " ")
+Rel(api_gw, tag_get, " ")
+Rel(api_gw, tag_post, " ")
+Rel(api_gw, tag_del, " ")
+Rel(api_gw, search_images, " ")
+Rel(api_gw, upload, " ")
+
+Rel(images_get, db, " ")
+Rel(images_post, db, " ")
+Rel(image_get, db, " ")
+Rel(image_put, db, " ")
+Rel(image_del, db, " ")
+Rel(tags_get, db, " ")
+Rel(tags_post, db, " ")
+Rel(tag_get, db, " ")
+Rel(tag_post, db, " ")
+Rel(tag_del, db, " ")
+Rel(search_images, db, " ")
+Rel(upload, db, " ")
+
+Rel(image_del, s3, " ")
+Rel(upload, s3, " ")
+
+Rel(s3, s3_hook, "Notifies when large upload has happened")
+Rel(s3_hook, db, "Marks upload time and archive prefix")
+
+Rel(migrations, db, "Executes migrations in lambda context on deploy")
+
+Rel(categorizer, categorizer_app, "Manage images and tags")
+
+Rel(categorizer_app, s3, "Large uploads via pre-signed URL")
+Rel(categorizer_app, api_gw, "Manage Image and Tag metadata")
+Rel(categorizer_app, api_gw, "Small Image uploads")
+
+Rel(ml_sys, s3, "Retrieve archived images via pre-signed URL")
+Rel(ml_sys, api_gw, "Search for images by tag")
+
+@enduml

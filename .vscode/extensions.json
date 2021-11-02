@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "42crunch.vscode-openapi",
+        "streetsidesoftware.code-spell-checker",
+        "redhat.vscode-yaml",
+        "jebbs.plantuml"
+    ]
+}

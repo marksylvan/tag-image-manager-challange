@@ -1,0 +1,19 @@
+@startuml
+
+participant "Image\nCategorization\nClient" as client
+participant "Image\nCategorization\nClient" as post_handler
+participant "s3\nHook\nlambda" as s3_hook
+database "RDS" as db
+database "s3" as s3
+
+client -> post_handler: Metadata including name, size, tags
+post_handler -> db: Creates record for\nimage and tags
+post_handler -> post_handler: Generates pre-signed\nupload url
+post_handler -> client: Returns ID + upload_url
+client -> s3: PUTs image to upload_url
+s3 -> s3_hook: notifies image uploaded
+s3_hook -> s3: inspects upload\nmoves to permanent\nlocation
+s3_hook -> rds: marks image upload time\nand permanent key
+
+
+@enduml
