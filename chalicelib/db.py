@@ -15,6 +15,21 @@ def create_tables():
     Base.metadata.create_all(engine)
 
 
+def get(session: Session, model: Base, id: int):
+    return session.query(model).filter_by(id=id).first()
+
+
+def get_or_create(session: Session, model: Base, **kwargs):
+    instance = session.query(model).filter_by(**kwargs).first()
+    if instance:
+        return instance
+    else:
+        instance = model(**kwargs)
+        session.add(instance)
+        session.commit()
+        return instance
+
+
 def get_engine() -> Engine:
     global engine
 

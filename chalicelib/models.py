@@ -38,3 +38,9 @@ class Tag(Base):
     images = relationship(
         "Image", secondary=image_tags, back_populates="tags", lazy="dynamic"
     )
+
+    def __repr__(self) -> str:
+        return f"Tag (id={self.id}, name={self.name})"
+
+    def to_payload(self):
+        return {"id": self.id, "name": self.name}
