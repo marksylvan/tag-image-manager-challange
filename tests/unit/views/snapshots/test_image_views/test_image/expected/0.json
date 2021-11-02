@@ -1,0 +1,15 @@
+{
+  "created_by": "foo",
+  "created_timestamp": 0,
+  "filename": "foo.dcm",
+  "id": 0,
+  "size": 0,
+  "tags": [
+    {
+      "id": 0,
+      "name": "thing"
+    }
+  ],
+  "uploaded_timestamp": null,
+  "url": null
+}

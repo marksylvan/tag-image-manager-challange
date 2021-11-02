@@ -32,6 +32,7 @@ deploy: packaged/packaged.yaml
 		--stack-name $(SERVICE_STACK_NAME) \
 		--capabilities CAPABILITY_IAM \
 		--parameter-overrides \
+			CognitoPoolArn=$(COGNITO_POOL_ARN) \
 			Stage=$(STAGE) \
 			InfraStack=$(INFRA_STACK_NAME)
 
@@ -42,6 +43,7 @@ docs:
 		-o design-docs/openapi/generated-tagged-image-manager.md
 
 fix:
+	poetry run isort app.py chalicelib/
 	poetry run black app.py chalicelib/
 
 lint:
@@ -81,4 +83,8 @@ tests: lint unittests
 unittests:
 	poetry run pytest -vv --cov-report term-missing --cov="chalicelib" tests/unit
 
-.PHONY: deploy-service docs packaged/sam.yaml lint unittests smoketest tests
+update-snapshots:
+	poetry run pytest tests/unit -v --snapshot-update --allow-snapshot-deletion
+
+
+.PHONY: deploy-service docs packaged/sam.yaml lint unittests smoketest tests update-snapshots

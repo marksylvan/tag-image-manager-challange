@@ -186,13 +186,71 @@ This operation does not require authentication
 
 `DELETE /images/{image_id}`
 
-*Delete an individual Image Record*
+*Delete an individual Image Record and image if it exists*
 
 <h3 id="deleteimage-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |204|[No Content](https://tools.ietf.org/html/rfc7231#section-6.3.5)|Null response|None|
+
+<aside class="success">
+This operation does not require authentication
+</aside>
+
+## updateImage
+
+<a id="opIdupdateImage"></a>
+
+> Code samples
+
+`PUT /images/{image_id}`
+
+*Update tags on an image*
+
+> Body parameter
+
+```json
+{
+  "tags": [
+    "string"
+  ]
+}
+```
+
+<h3 id="updateimage-parameters">Parameters</h3>
+
+|Name|In|Type|Required|Description|
+|---|---|---|---|---|
+|body|body|[ImageUpdateInput](#schemaimageupdateinput)|true|none|
+
+> Example responses
+
+> 200 Response
+
+```json
+{
+  "id": 0,
+  "created_by": "string",
+  "created_timestamp": 0,
+  "filename": "string",
+  "size": 0,
+  "tags": [
+    {
+      "id": 0,
+      "name": "string"
+    }
+  ],
+  "uploaded_timestamp": 0,
+  "url": "string"
+}
+```
+
+<h3 id="updateimage-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|An image record|[ImageRecord](#schemaimagerecord)|
 
 <aside class="success">
 This operation does not require authentication
@@ -279,8 +337,8 @@ This operation does not require authentication
 
 ```json
 {
-  "id": 0,
-  "upload_url": "string"
+  "id": "string",
+  "name": "string"
 }
 ```
 
@@ -288,7 +346,7 @@ This operation does not require authentication
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|201|[Created](https://tools.ietf.org/html/rfc7231#section-6.3.2)|ID of new record along with URL to upload (PUT) the image to.|[ImageCreatedResponse](#schemaimagecreatedresponse)|
+|201|[Created](https://tools.ietf.org/html/rfc7231#section-6.3.2)|ID of new record along with URL to upload (PUT) the image to.|[TagCreatedResponse](#schematagcreatedresponse)|
 |default|Default|unexpected error|[Error](#schemaerror)|
 
 <aside class="success">
@@ -363,6 +421,51 @@ Does not delete associated images
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
 |204|[No Content](https://tools.ietf.org/html/rfc7231#section-6.3.5)|Null response|None|
+
+<aside class="success">
+This operation does not require authentication
+</aside>
+
+## Update tag
+
+<a id="opIdUpdate tag"></a>
+
+> Code samples
+
+`PUT /tags/{tag_id}`
+
+*Update (rename) a tag*
+
+> Body parameter
+
+```json
+{
+  "name": "string"
+}
+```
+
+<h3 id="update-tag-parameters">Parameters</h3>
+
+|Name|In|Type|Required|Description|
+|---|---|---|---|---|
+|body|body|[TagUpdateInput](#schematagupdateinput)|true|none|
+
+> Example responses
+
+> 200 Response
+
+```json
+{
+  "id": "string",
+  "name": "string"
+}
+```
+
+<h3 id="update-tag-responses">Responses</h3>
+
+|Status|Meaning|Description|Schema|
+|---|---|---|---|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Tag updated|[TagCreatedResponse](#schematagcreatedresponse)|
 
 <aside class="success">
 This operation does not require authentication
@@ -768,6 +871,28 @@ This operation does not require authentication
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
+|name|string|false|none|none|
+
+<h2 id="tocS_TagCreatedResponse">TagCreatedResponse</h2>
+<!-- backwards compatibility -->
+<a id="schematagcreatedresponse"></a>
+<a id="schema_TagCreatedResponse"></a>
+<a id="tocStagcreatedresponse"></a>
+<a id="tocstagcreatedresponse"></a>
+
+```json
+{
+  "id": "string",
+  "name": "string"
+}
+
+```
+
+### Properties
+
+|Name|Type|Required|Restrictions|Description|
+|---|---|---|---|---|
+|id|string|false|none|none|
 |name|string|false|none|none|
 
 <h2 id="tocS_TagUpdateInput">TagUpdateInput</h2>

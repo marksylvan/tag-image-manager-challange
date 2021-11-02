@@ -1,0 +1,13 @@
+{
+  "meta": {
+    "current_page": 0,
+    "has_more_pages": false,
+    "total_results": 1
+  },
+  "results": [
+    {
+      "id": 0,
+      "name": "a tag"
+    }
+  ]
+}

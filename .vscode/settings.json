@@ -1,4 +1,8 @@
 {
+    "editor.formatOnSave": true,
+    "[python]": {
+        "editor.codeActionsOnSave": ["source.organizeImports", "source.fixAll"]
+    },
     "plantuml.diagramsRoot": "design-docs/diagrams-src",
     "plantuml.exportFormat": "svg",
     "plantuml.exportOutDir": "design-docs/diagrams",

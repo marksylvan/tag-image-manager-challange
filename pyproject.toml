@@ -7,6 +7,12 @@ authors = ["msylvan <marksylvan@aussiebb.com.au>"]
 [tool.poetry.dependencies]
 chalice = "^1.26.1"
 python = "^3.9"
+pg8000 = "^1.22.0"
+sqlalchemy = { version = "^1.4.26", optional = true }
+
+[tool.poetry.extras]
+sqlalchemy = ["mypy"]
+
 
 [tool.poetry.dev-dependencies]
 flake8 = "^4.0.1"
@@ -19,6 +25,30 @@ flake8-black = "^0.2.3"
 flake8-isort = "^4.0.0"
 pytest-cov = "^3.0.0"
 
+boto3 = "^1.19.8"
+
+pytest-snapshot = "^0.7.0"
+simplejson = "^3.17.5"
+
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[mypy]
+plugins = ["sqlalchemy.ext.mypy.plugin"]
+
+[tool.black]
+line-length = 79
+target_version = ['py38']
+exclude = '''
+/(
+      build
+    | dist
+    | _build
+    | \.git
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+)/
+'''

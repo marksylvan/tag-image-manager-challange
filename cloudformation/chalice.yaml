@@ -3,6 +3,9 @@ Transform: AWS::Serverless-2016-10-31
 Description: >
   Tagged Image Manager System
 Parameters:
+  CognitoPoolArn:
+    Type: String
+    Description: Cognito userpool used for auth
   DefaultTimeout:
     Type: Number
     Default: 180
@@ -59,6 +62,7 @@ Resources:
       #   Type: AllAtOnce
       Environment:
         Variables:
+          COGNITO_POOL_ARN: !Ref CognitoPoolArn
           ACCESS_LOG_TABLE: !Ref AccessLogTable
           BUCKET_NAME: 
             Fn::ImportValue: !Sub "${InfraStack}:AssetBucket"

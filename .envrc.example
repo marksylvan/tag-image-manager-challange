@@ -1,2 +1,3 @@
 # set values here then rename to .envrc for direnv
-export PROFILE=alt
+export COGNITO_POOL_ARN=set-me
+export PROFILE=set-me

@@ -99,13 +99,33 @@ paths:
               schema: 
                 $ref: "#/components/schemas/ImageRecord"
     delete:
-      summary: Delete an individual Image Record
+      summary: Delete an individual Image Record and image if it exists
       operationId: deleteImage
       tags:
         - images
       responses:
         '204':
           description: Null response
+    put:
+      summary: Update tags on an image
+      operationId: updateImage
+      tags:
+        - images
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:    
+              type: object
+              $ref: "#/components/schemas/ImageUpdateInput"
+      responses:
+        '200':
+          description: An image record
+          content:
+            application/json:
+              schema: 
+                $ref: "#/components/schemas/ImageRecord"
+      
 
 # TAG endpoints
   /tags:
@@ -157,7 +177,7 @@ paths:
           content:
             application/json:
               schema: 
-                $ref: "#/components/schemas/ImageCreatedResponse"
+                $ref: "#/components/schemas/TagCreatedResponse"
         default:
           description: unexpected error
           content:
@@ -186,6 +206,25 @@ paths:
       responses:
         '204':
           description: Null response
+    put:
+      summary: Update (rename) a tag
+      operationId: Update tag
+      tags:
+        - tags
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              $ref: "#/components/schemas/TagUpdateInput"
+      responses:
+        '200':
+          description: "Tag updated"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TagCreatedResponse"
   /tags/{tag_id}/images:
     get:
       summary: Get images associated with a Tag Record
@@ -395,6 +434,13 @@ components:
       properties:
         name:
           type: string
+    TagCreatedResponse:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
     TagUpdateInput:
       type: object
       properties:
@@ -439,6 +485,9 @@ components:
         message:
           type: string
   securitySchemes:
-    openId:
-     type: openIdConnect
-     openIdConnectUrl: 
+    cognito_id_token:
+     type: http
+     scheme: bearer
+     bearerFormat: AWS Cognito ID Token
+security:
+  - cognito_id_token: []
