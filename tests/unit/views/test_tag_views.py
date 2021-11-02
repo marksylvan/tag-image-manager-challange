@@ -8,7 +8,15 @@ from sqlalchemy.orm.session import Session
 from tests.helpers import dict_assert
 
 
-def test_tags(snapshot):
+@pytest.fixture
+def sample_tag(db_session: Session) -> int:
+    tag = Tag(name="sample tag")
+    db_session.add(tag)
+    db_session.commit()
+    return tag.id
+
+
+def test_tags(db_session, sample_tag, snapshot):
     with Client(app) as client:
         response = client.http.get("/v1/tags")
         dict_assert(response.json_body, snapshot)
@@ -36,14 +44,6 @@ def test_create_tag(db_session, snapshot):
         assert db_session.query(Tag).where(Tag.name == "tag 1").count() == 1
 
 
-@pytest.fixture
-def sample_tag(db_session: Session) -> int:
-    tag = Tag(name="sample tag")
-    db_session.add(tag)
-    db_session.commit()
-    return tag.id
-
-
 def test_tag(sample_tag, snapshot):
     with Client(app) as client:
         # exists
@@ -65,7 +65,7 @@ def test_tag(sample_tag, snapshot):
         }
 
 
-def test_tag_update(sample_tag, db_session):
+def test_tag_update(db_session, sample_tag):
     with Client(app) as client:
         response = client.http.put(
             f"/v1/tags/{sample_tag}",
@@ -75,7 +75,7 @@ def test_tag_update(sample_tag, db_session):
         assert response.json_body == {"id": sample_tag, "name": "sample tag x"}
 
 
-def test_tag_delete(sample_tag, db_session):
+def test_tag_delete(db_session, sample_tag):
     with Client(app) as client:
         response = client.http.delete("/v1/tags/1")
         assert response.json_body == {}
