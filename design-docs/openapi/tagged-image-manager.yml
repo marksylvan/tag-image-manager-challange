@@ -3,7 +3,7 @@ info:
   version: 1.0.0
   title: Tagged Image Manager
 servers:
-  - url: http://PENDING/v1
+  - url: https://11t1y7xqdi.execute-api.ap-southeast-2.amazonaws.com/api/v1
 paths:
 # IMAGE endpoints
   /images:

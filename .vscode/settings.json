@@ -1,5 +1,6 @@
 {
     "plantuml.diagramsRoot": "design-docs/diagrams-src",
     "plantuml.exportFormat": "svg",
-    "plantuml.exportOutDir": "design-docs/diagrams"
+    "plantuml.exportOutDir": "design-docs/diagrams",
+    "python.formatting.provider": "black"
 }

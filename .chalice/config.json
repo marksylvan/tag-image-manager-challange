@@ -1,0 +1,17 @@
+{
+  "version": "2.0",
+  "app_name": "tagged-image-manager",
+  "manage_iam_role": true,
+  "api_gateway_stage": "api",
+  "stages": {
+    "dev": {
+      "environment_variables": {}
+    },
+    "staging": {
+      "environment_variables": {}
+    },
+    "prod": {
+      "environment_variables": {}
+    }
+  }
+}

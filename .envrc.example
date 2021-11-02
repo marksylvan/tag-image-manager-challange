@@ -1,0 +1,2 @@
+# set values here then rename to .envrc for direnv
+export PROFILE=alt

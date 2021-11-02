@@ -17,7 +17,7 @@ headingLevel: 2
 
 Base URLs:
 
-* <a href="http://PENDING/v1">http://PENDING/v1</a>
+* <a href="https://11t1y7xqdi.execute-api.ap-southeast-2.amazonaws.com/api/v1">https://11t1y7xqdi.execute-api.ap-southeast-2.amazonaws.com/api/v1</a>
 
 # Authentication
 

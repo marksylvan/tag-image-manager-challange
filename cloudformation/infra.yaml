@@ -1,0 +1,312 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: Infrastructure for Tagged Image Manager
+Parameters:
+  Stage:
+    Type: String
+    Description: Deployment stage
+    AllowedValues: ["dev", "staging", "prod"]
+
+Resources:
+  AssetBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: Private
+      # 
+      # CorsConfiguration required if viewing uploads from a browser based app
+      # 
+      # CorsConfiguration:
+      #   CorsRules:
+      #     - AllowedOrigins:
+      #         - "*"
+      #       AllowedHeaders:
+      #         - "*"
+      #       AllowedMethods:
+      #         - "GET"
+      #         - "HEAD"
+      #       ExposedHeaders:
+      #         - Access-Control-Allow-Origin
+      #         - ETag
+      #
+      # the section below can be used in the future to 
+      # automatically clean up unprocessable uploads
+      #
+      # LifecycleConfiguration:
+      #   Rules:
+      #     - ExpirationInDays: 90
+      #       Prefix: tmp/
+      #       Status: Enabled
+  CodeBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: Private
+  # _   _      _                      _
+  # | \ | | ___| |___      _____  _ __| | __
+  # |  \| |/ _ \ __\ \ /\ / / _ \| '__| |/ /
+  # | |\  |  __/ |_ \ V  V / (_) | |  |   <
+  # |_| \_|\___|\__| \_/\_/ \___/|_|  |_|\_\
+  #
+  VPC:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: 172.31.0.0/16
+      EnableDnsSupport: true
+      EnableDnsHostnames: true
+      Tags:
+        - Key: name
+          Value: "Public/Private VPC"
+
+  PublicSubnet1:
+    Type: "AWS::EC2::Subnet"
+    Properties:
+      VpcId: !Ref VPC
+      AvailabilityZone: ap-southeast-2a
+      CidrBlock: 172.31.1.0/24
+      MapPublicIpOnLaunch: true
+      Tags:
+        - Key: name
+          Value: "public subnet 1"
+  PublicSubnet2:
+    Type: "AWS::EC2::Subnet"
+    Properties:
+      VpcId: !Ref VPC
+      AvailabilityZone: ap-southeast-2b
+      CidrBlock: 172.31.2.0/24
+      MapPublicIpOnLaunch: true
+      Tags:
+        - Key: name
+          Value: "public subnet 2"
+
+  PrivateSubnet1:
+    Type: "AWS::EC2::Subnet"
+    Properties:
+      VpcId: !Ref VPC
+      AvailabilityZone: ap-southeast-2a
+      CidrBlock: 172.31.3.0/24
+      MapPublicIpOnLaunch: false
+      Tags:
+        - Key: name
+          Value: "private subnet 2"
+  PrivateSubnet2:
+    Type: "AWS::EC2::Subnet"
+    Properties:
+      VpcId: !Ref VPC
+      AvailabilityZone: ap-southeast-2b
+      CidrBlock: 172.31.4.0/24
+      MapPublicIpOnLaunch: false
+      Tags:
+        - Key: name
+          Value: "private subnet 2"
+
+  InternetGateway:
+    Type: "AWS::EC2::InternetGateway"
+    Properties:
+      Tags:
+        - Key: Name
+          Value: !Join [_, [!Ref "AWS::StackName"]]
+        - Key: Network
+          Value: Public
+  GatewayToInternet:
+    Type: "AWS::EC2::VPCGatewayAttachment"
+    Properties:
+      VpcId: !Ref VPC
+      InternetGatewayId: !Ref InternetGateway
+  PublicRouteTable:
+    Type: "AWS::EC2::RouteTable"
+    Properties:
+      VpcId: !Ref VPC
+      Tags:
+        - Key: Network
+          Value: Public
+  PublicRoute:
+    Type: "AWS::EC2::Route"
+    DependsOn: GatewayToInternet
+    Properties:
+      RouteTableId: !Ref PublicRouteTable
+      DestinationCidrBlock: 0.0.0.0/0
+      GatewayId: !Ref InternetGateway
+  PublicSubnet1RouteTableAssociation:
+    Type: "AWS::EC2::SubnetRouteTableAssociation"
+    Properties:
+      SubnetId: !Ref PublicSubnet1
+      RouteTableId: !Ref PublicRouteTable
+  PublicSubnet2RouteTableAssociation:
+    Type: "AWS::EC2::SubnetRouteTableAssociation"
+    Properties:
+      SubnetId: !Ref PublicSubnet2
+      RouteTableId: !Ref PublicRouteTable
+
+  NatGateway:
+    Type: "AWS::EC2::NatGateway"
+    DependsOn: NatPublicIP
+    Properties:
+      AllocationId: !GetAtt NatPublicIP.AllocationId
+      SubnetId: !Ref PublicSubnet1
+  NatPublicIP:
+    Type: "AWS::EC2::EIP"
+    DependsOn: VPC
+    Properties:
+      Domain: vpc
+
+  PrivateRouteTable:
+    Type: "AWS::EC2::RouteTable"
+    Properties:
+      VpcId: !Ref VPC
+      Tags:
+        - Key: Network
+          Value: Private
+  PrivateRoute:
+    Type: "AWS::EC2::Route"
+    Properties:
+      RouteTableId: !Ref PrivateRouteTable
+      DestinationCidrBlock: 0.0.0.0/0
+      NatGatewayId: !Ref NatGateway
+  PrivateSubnet1RouteTableAssociation:
+    Type: "AWS::EC2::SubnetRouteTableAssociation"
+    Properties:
+      SubnetId: !Ref PrivateSubnet1
+      RouteTableId: !Ref PrivateRouteTable
+  PrivateSubnet2RouteTableAssociation:
+    Type: "AWS::EC2::SubnetRouteTableAssociation"
+    Properties:
+      SubnetId: !Ref PrivateSubnet2
+      RouteTableId: !Ref PrivateRouteTable
+
+  DBSubnetGroup:
+    Type: AWS::RDS::DBSubnetGroup
+    Properties:
+      DBSubnetGroupDescription: DB subnet private group
+      SubnetIds:
+        - !Ref PrivateSubnet1
+        - !Ref PrivateSubnet2
+  LambdaSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Allow http to client host
+      VpcId: !Ref VPC
+      SecurityGroupEgress:
+        - IpProtocol: "-1"
+          FromPort: -1
+          ToPort: -1
+          CidrIp: 0.0.0.0/0
+  DatabaseSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    DependsOn:
+      - PrivateSubnet1
+      - PrivateSubnet2
+    Properties:
+      GroupDescription: Allow http to client host
+      VpcId: !Ref VPC
+      SecurityGroupIngress:
+        # This is the specific rule that allows the Lambda to have network access to our RDS cluster
+        - IpProtocol: tcp
+          FromPort: 5432
+          ToPort: 5432
+          SourceSecurityGroupId: !GetAtt LambdaSecurityGroup.GroupId
+      SecurityGroupEgress:
+        - IpProtocol: "-1"
+          FromPort: -1
+          ToPort: -1
+          CidrIp: 0.0.0.0/0
+  #  ____        _        _
+  # |  _ \  __ _| |_ __ _| |__   __ _ ___  ___
+  # | | | |/ _` | __/ _` | '_ \ / _` / __|/ _ \
+  # | |_| | (_| | || (_| | |_) | (_| \__ \  __/
+  # |____/ \__,_|\__\__,_|_.__/ \__,_|___/\___|
+  #
+  DBMasterPassword:
+    Type: AWS::SecretsManager::Secret
+    Properties:
+      Name: !Sub "${AWS::StackName}-dbmaster-password"
+      GenerateSecretString:
+        SecretStringTemplate: '{"username": "root"}'
+        GenerateStringKey: "password"
+        PasswordLength: 16
+        ExcludeCharacters: '"@/\'
+  DBUserPassword:
+    Type: AWS::SecretsManager::Secret
+    Properties:
+      Name: !Sub "${AWS::StackName}-dbuser-password"
+      GenerateSecretString:
+        SecretStringTemplate: '{"username": "user"}'
+        GenerateStringKey: "password"
+        PasswordLength: 16
+        ExcludeCharacters: '"@/\'
+  Database:
+    # settings below are for free tier
+    # 
+    # for a prod and staging environment it would be configured to be more
+    # performant
+    # 
+    # prod in particular would have replication setup
+    Type: AWS::RDS::DBInstance
+    Properties:
+      AllocatedStorage: 8
+      DBInstanceClass: db.t2.micro
+      DBSubnetGroupName: !Ref DBSubnetGroup
+      DeletionProtection: true
+      EnableCloudwatchLogsExports:
+        - postgresql
+      EnablePerformanceInsights: true
+      Engine: postgres
+      EngineVersion: 12.8
+      MasterUsername:
+        !Join [
+          "",
+          [
+            "{{resolve:secretsmanager:",
+            !Ref DBMasterPassword,
+            ":SecretString:username}}",
+          ],
+        ]
+      MasterUserPassword:
+        !Join [
+          "",
+          [
+            "{{resolve:secretsmanager:",
+            !Ref DBMasterPassword,
+            ":SecretString:password}}",
+          ],
+        ]
+      PubliclyAccessible: false
+      VPCSecurityGroups:
+        - !Ref LambdaSecurityGroup
+        - !Ref DatabaseSecurityGroup
+  DBMasterPasswordRDSInstanceAttachment:
+    Type: "AWS::SecretsManager::SecretTargetAttachment"
+    Properties:
+      SecretId: !Ref DBMasterPassword
+      TargetId: !Ref Database
+      TargetType: AWS::RDS::DBInstance
+
+Outputs:
+  AssetBucketName:
+    Value: !Ref AssetBucket
+    Description: Bucket which stores the images
+    Export:
+      Name: !Sub "${AWS::StackName}:AssetBucket"
+  CodeBucketName:
+    Value: !Ref CodeBucket
+    Description: Bucket which stores the code for the lambda
+    Export:
+      Name: !Sub "${AWS::StackName}:CodeBucket"
+  LambdaSecurityGroup:
+    Value: !GetAtt LambdaSecurityGroup.GroupId
+    Export:
+      Name: !Sub "${AWS::StackName}:LambdaSecurityGroupId"
+  PrivateSubnet1:
+    Value: !Ref PrivateSubnet1
+    Export:
+      Name: !Sub "${AWS::StackName}:PrivateSubnet1Id"
+  PrivateSubnet2:
+    Value: !Ref PrivateSubnet2
+    Export:
+      Name: !Sub "${AWS::StackName}:PrivateSubnet2Id"
+  DBEndpoint:
+    Value: !GetAtt [Database, Endpoint.Address]
+    Description: "RDS Instance Hostname"
+    Export:
+      Name: !Sub "${AWS::StackName}:DBEndpoint"
+  DBMasterPasswordArn:
+    Value: !Ref DBMasterPassword
+  DBUserPasswordArn:
+    Value: !Ref DBUserPassword

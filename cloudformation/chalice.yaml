@@ -1,0 +1,66 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  Tagged Image Manager System
+Parameters:
+  DefaultTimeout:
+    Type: Number
+    Default: 180
+  InfraStack:
+    Type: String
+    Description: Name of the infrastructure stack
+    Default: tagged-image-dev-infra
+  Stage:
+    Type: String
+    Description: Deployment stage
+    AllowedValues: ["dev", "staging", "prod"]
+Globals:
+  Function:
+    Timeout: !Ref DefaultTimeout
+
+Resources:
+  # ============================================
+  # DYNAMODB TABLES
+  # ============================================
+  AccessLogTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: !Sub "tag-manager-${Stage}-access-table"
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: user_id
+          AttributeType: S
+      KeySchema:
+        - AttributeName: user_id
+          KeyType: HASH
+      TimeToLiveSpecification:
+        AttributeName: ttl
+        Enabled: true
+
+  #   ____       _
+  #  / ___| __ _| |_ _____      ____ _ _   _
+  # | |  _ / _` | __/ _ \ \ /\ / / _` | | | |
+  # | |_| | (_| | ||  __/\ V  V / (_| | |_| |
+  #  \____|\__,_|\__\___| \_/\_/ \__,_|\__, |
+  #                                    |___/
+  RestAPI:
+    Properties:
+      Name: !Sub "tag-manager-${Stage}"
+  #  _                    _         _
+  # | |    __ _ _ __ ___ | |__   __| | __ _ ___
+  # | |   / _` | '_ ` _ \| '_ \ / _` |/ _` / __|
+  # | |__| (_| | | | | | | |_) | (_| | (_| \__ \
+  # |_____\__,_|_| |_| |_|_.__/ \__,_|\__,_|___/
+  #
+  APIHandler:
+    Properties:
+      AutoPublishAlias: live
+      # DeploymentPreference:
+      #   Type: AllAtOnce
+      Environment:
+        Variables:
+          ACCESS_LOG_TABLE: !Ref AccessLogTable
+          BUCKET_NAME: 
+            Fn::ImportValue: !Sub "${InfraStack}:AssetBucket"
+          STAGE: !Ref Stage
+      MemorySize: 1536
