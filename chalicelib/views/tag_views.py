@@ -1,8 +1,14 @@
-from chalice import Blueprint
+import typing
 
+from chalice import Blueprint
 from chalicelib.authorizer import cognito_authorizer
+from chalicelib.db import get_session
+from chalicelib.models import Tag
+from chalicelib.validation import ValidationParam, validate_payload
 
 tag_routes = Blueprint(__name__)
+
+POST_PARAMS = [ValidationParam("name", str, True, min_len=3, max_len=160)]
 
 
 @tag_routes.route(
@@ -23,7 +29,17 @@ def get_tags():
     "/", methods=["POST"], authorizer=cognito_authorizer, cors=True
 )
 def create_tag():
-    return {"id": 0, "name": "a tag"}
+    validate_payload(tag_routes, POST_PARAMS)
+
+    payload: typing.Mapping[
+        str, typing.Any
+    ] = tag_routes.current_request.json_body
+    session = get_session()
+    new_tag = Tag(name=payload["name"])
+    session.add(new_tag)
+    session.commit()
+
+    return {"id": new_tag.id, "name": new_tag.name}
 
 
 @tag_routes.route(

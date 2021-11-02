@@ -8,10 +8,7 @@ authors = ["msylvan <marksylvan@aussiebb.com.au>"]
 chalice = "^1.26.1"
 python = "^3.9"
 pg8000 = "^1.22.0"
-sqlalchemy = { version = "^1.4.26", optional = true }
-
-[tool.poetry.extras]
-sqlalchemy = ["mypy"]
+sqlalchemy = { version = "^1.4.26", extras = ["mypy"] }
 
 
 [tool.poetry.dev-dependencies]

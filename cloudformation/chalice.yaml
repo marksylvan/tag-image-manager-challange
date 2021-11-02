@@ -6,6 +6,9 @@ Parameters:
   CognitoPoolArn:
     Type: String
     Description: Cognito userpool used for auth
+  DBUrl:
+    Type: String
+    Description: Database connection Url
   DefaultTimeout:
     Type: Number
     Default: 180
@@ -22,9 +25,6 @@ Globals:
     Timeout: !Ref DefaultTimeout
 
 Resources:
-  # ============================================
-  # DYNAMODB TABLES
-  # ============================================
   AccessLogTable:
     Type: AWS::DynamoDB::Table
     Properties:
@@ -40,21 +40,11 @@ Resources:
         AttributeName: ttl
         Enabled: true
 
-  #   ____       _
-  #  / ___| __ _| |_ _____      ____ _ _   _
-  # | |  _ / _` | __/ _ \ \ /\ / / _` | | | |
-  # | |_| | (_| | ||  __/\ V  V / (_| | |_| |
-  #  \____|\__,_|\__\___| \_/\_/ \__,_|\__, |
-  #                                    |___/
   RestAPI:
     Properties:
       Name: !Sub "tag-manager-${Stage}"
-  #  _                    _         _
-  # | |    __ _ _ __ ___ | |__   __| | __ _ ___
-  # | |   / _` | '_ ` _ \| '_ \ / _` |/ _` / __|
-  # | |__| (_| | | | | | | |_) | (_| | (_| \__ \
-  # |_____\__,_|_| |_| |_|_.__/ \__,_|\__,_|___/
-  #
+
+
   APIHandler:
     Properties:
       AutoPublishAlias: live
@@ -62,9 +52,18 @@ Resources:
       #   Type: AllAtOnce
       Environment:
         Variables:
-          COGNITO_POOL_ARN: !Ref CognitoPoolArn
           ACCESS_LOG_TABLE: !Ref AccessLogTable
           BUCKET_NAME: 
             Fn::ImportValue: !Sub "${InfraStack}:AssetBucket"
+          COGNITO_POOL_ARN: !Ref CognitoPoolArn
+          DB_URL: !Ref DBUrl
           STAGE: !Ref Stage
+      Role:
+        Fn::ImportValue: !Sub "${InfraStack}:RoleArn"
       MemorySize: 1536
+      VpcConfig:
+        SecurityGroupIds:
+          - Fn::ImportValue: !Sub "${InfraStack}:LambdaSecurityGroupId"
+        SubnetIds:
+          - Fn::ImportValue: !Sub "${InfraStack}:PrivateSubnet1Id"
+          - Fn::ImportValue: !Sub "${InfraStack}:PrivateSubnet2Id"

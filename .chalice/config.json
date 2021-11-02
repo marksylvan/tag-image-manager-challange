@@ -1,7 +1,8 @@
 {
   "version": "2.0",
   "app_name": "tagged-image-manager",
-  "manage_iam_role": true,
+  "autogen_policy": false,
+  "manage_iam_role": false,
   "api_gateway_stage": "api",
   "stages": {
     "dev": {

@@ -1,3 +1,5 @@
+import json
+
 from app import app
 from chalice.test import Client
 from tests.helpers import dict_assert
@@ -11,8 +13,12 @@ def test_tags(snapshot):
 
 def test_post_tag(snapshot):
     with Client(app) as client:
-        response = client.http.post("/v1/tags")
-        dict_assert(response.json_body, snapshot)
+        response = client.http.post(
+            "/v1/tags",
+            headers={"Content-Type": "application/json"},
+            body=json.dumps({"name": "tag 1"}),
+        )
+        assert response.json_body["name"] == "tag 1"
 
 
 def test_tag(snapshot):

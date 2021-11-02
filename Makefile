@@ -16,23 +16,23 @@ else
   PYTHON = aws-vault exec $(PROFILE) -- python
 endif
 
-
-
 deploy-infra: cloudformation/infra.yaml
 	$(AWS) cloudformation deploy \
 		--template-file $< \
 		--stack-name $(INFRA_STACK_NAME) \
+		--capabilities CAPABILITY_IAM \
 		--parameter-overrides \
 			Stage=$(STAGE)
 
 # Deploy uploaded stack to CloudFormation
 deploy: packaged/packaged.yaml
-	$(AWS) cloudformation deploy \
+	@$(AWS) cloudformation deploy \
 		--template-file $< \
 		--stack-name $(SERVICE_STACK_NAME) \
 		--capabilities CAPABILITY_IAM \
 		--parameter-overrides \
 			CognitoPoolArn=$(COGNITO_POOL_ARN) \
+			DBUrl=$(DB_URL) \
 			Stage=$(STAGE) \
 			InfraStack=$(INFRA_STACK_NAME)
 

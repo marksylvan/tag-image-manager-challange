@@ -403,7 +403,7 @@ components:
     ImageBrowsePage:
       type: object
       properties:        
-        results:
+        data:
           $ref: "#/components/schemas/ImageRecords"
         meta:
           $ref: "#/components/schemas/PageMeta"
@@ -425,7 +425,7 @@ components:
     TagBrowsePage:
       type: object
       properties:        
-        results:
+        data:
           $ref: "#/components/schemas/Tags"
         meta:
           $ref: "#/components/schemas/PageMeta"

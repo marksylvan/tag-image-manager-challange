@@ -278,6 +278,22 @@ Resources:
       TargetId: !Ref Database
       TargetType: AWS::RDS::DBInstance
 
+  # Role
+  Role:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Action: sts:AssumeRole
+            Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Sid: ""
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaVPCAccessExecutionRole
+
 Outputs:
   AssetBucketName:
     Value: !Ref AssetBucket
@@ -310,3 +326,8 @@ Outputs:
     Value: !Ref DBMasterPassword
   DBUserPasswordArn:
     Value: !Ref DBUserPassword
+  RoleArn:
+    Value: !GetAtt Role.Arn
+    Description: Role to allow lambada access to resources
+    Export:
+      Name: !Sub "${AWS::StackName}:RoleArn"
