@@ -1,11 +1,10 @@
 import typing
 
 from chalice import Blueprint
-from sqlalchemy.orm.session import Session
 
 from chalicelib.authorizer import cognito_authorizer
-from chalicelib.db import get_or_create, get_session
-from chalicelib.models import Image, Tag
+from chalicelib.db import get_session
+from chalicelib.models import Image
 from chalicelib.validation import (
     ValidationParam,
     validate_payload,

@@ -31,6 +31,9 @@ simplejson = "^3.17.5"
 
 pytest-freezegun = "^0.4.2"
 
+moto = {extras = ["s3"], version = "^2.2.12"}
+pytest-mock = "^3.6.1"
+
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
@@ -56,3 +59,7 @@ exclude = '''
 
 [tool.isort]
 profile = "black"
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = "E203"

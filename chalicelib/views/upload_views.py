@@ -2,16 +2,11 @@ import base64
 import typing
 
 from chalice import Blueprint
-from sqlalchemy.sql import base
 
 from chalicelib.authorizer import cognito_authorizer
 from chalicelib.db import get_session
 from chalicelib.models import Image
-from chalicelib.validation import (
-    ValidationParam,
-    validate_payload,
-    validate_query_params,
-)
+from chalicelib.validation import ValidationParam, validate_payload
 from chalicelib.views.helpers import retrieve_tag_records
 
 upload_routes = Blueprint(__name__)

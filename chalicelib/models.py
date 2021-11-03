@@ -71,12 +71,13 @@ class Image(Base):
         image.prefix = image.generate_prefix()
         s3_client: S3Client = boto3.client("s3")
 
-        # # TODO: best practice to set the content-type when uploading the object, otherwise it's application/octet-stream
-        # s3_client.put_object(
-        #     Bucket=cls.BUCKET_NAME,
-        #     Key=f"{image.prefix}/{image.filename}",
-        #     Body=image_data,
-        # )
+        # TODO: best practice to set the content-type when uploading
+        # the object, otherwise it's application/octet-stream
+        s3_client.put_object(
+            Bucket=cls.BUCKET_NAME,
+            Key=f"{image.prefix}{image.filename}",
+            Body=image_data,
+        )
 
         image.upload_timestamp = int(time.time())
         session.add(image)
@@ -107,7 +108,7 @@ class Image(Base):
             "put_object",
             Params={
                 "Bucket": cls.BUCKET_NAME,
-                "Key": f"{image.prefix}/{image.filename}",
+                "Key": f"{image.prefix}{image.filename}",
             },
             ExpiresIn=cls.PRESIGNED_URL_EXPIRY,
         )

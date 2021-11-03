@@ -47,7 +47,7 @@ fix:
 	poetry run black app.py chalicelib/
 
 lint:
-	poetry run flake8 app.py chalicelib/
+	poetry run black app.py chalicelib/
 
 # Export requirements for lambda
 requirements.txt: ./poetry.lock
