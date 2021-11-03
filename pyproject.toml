@@ -9,6 +9,8 @@ chalice = "^1.26.1"
 python = "^3.9"
 pg8000 = "^1.22.0"
 sqlalchemy = { version = "^1.4.26", extras = ["mypy"] }
+boto3 = "^1.19.9"
+boto3-stubs = {extras = ["s3"], version = "^1.19.9"}
 
 
 [tool.poetry.dev-dependencies]
@@ -26,6 +28,8 @@ boto3 = "^1.19.8"
 
 pytest-snapshot = "^0.7.0"
 simplejson = "^3.17.5"
+
+pytest-freezegun = "^0.4.2"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
@@ -49,3 +53,6 @@ exclude = '''
     | \.venv
 )/
 '''
+
+[tool.isort]
+profile = "black"

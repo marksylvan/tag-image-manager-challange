@@ -1,1 +1,19 @@
-{}
+{
+  "created_by": "test-user",
+  "created_timestamp": 1635926694,
+  "filename": "sample-1.dcm",
+  "id": 1,
+  "size": 256000,
+  "tags": [
+    {
+      "id": 2,
+      "name": "bar"
+    },
+    {
+      "id": 3,
+      "name": "baz"
+    }
+  ],
+  "uploaded_timestamp": 1635926694,
+  "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-1.dcm?AWSAccessKeyId=testing&Signature=cXXHdY265ST9UYwpVzw%2BJW7TJs4%3D&x-amz-security-token=testing&Expires=1635976800"
+}

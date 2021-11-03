@@ -18,6 +18,9 @@ class ValidationParam:
     min_len: typing.Optional[int] = None
     max_len: typing.Optional[int] = None
 
+    # lists
+    list_type: typing.Optional[typing.Any] = None
+
     def __post_init__(self):
         if self.field_type == str and self.max_len is not None:
             if self.max_len < 1:
@@ -58,6 +61,16 @@ def _validate(
                 errors.append(
                     f"{spec.field_name} invalid type, expecting {spec.field_type}, got {type(data[spec.field_name])}"  # noqa: E501
                 )
+
+            if isinstance(field_val, typing.List):
+                passes = all(
+                    [isinstance(v, spec.list_type) for v in field_val]
+                )
+
+                if not passes:
+                    errors.append(
+                        f"each member of {spec.field_name} must be {spec.list_type}"  # noqa: E501
+                    )
 
             if _is_numeric_field(field_val) and spec.min is not None:
                 if field_val < spec.min:

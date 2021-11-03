@@ -1,0 +1,2309 @@
+{
+  "meta": {
+    "current_page": 0,
+    "has_more_pages": true,
+    "total_results": 199
+  },
+  "results": [
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-1.dcm",
+      "id": 1,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-1.dcm?AWSAccessKeyId=testing&Signature=cXXHdY265ST9UYwpVzw%2BJW7TJs4%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-2.dcm",
+      "id": 2,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-2.dcm?AWSAccessKeyId=testing&Signature=BAAL%2FmLUKujF2S%2FJz9xsp74rVWQ%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-3.dcm",
+      "id": 3,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-3.dcm?AWSAccessKeyId=testing&Signature=UbmSiN7C5VbKUdCx%2FWfDGMrBhoU%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-4.dcm",
+      "id": 4,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-4.dcm?AWSAccessKeyId=testing&Signature=e0qAlUqKKKu2xjDgFpkH2u%2BTIgw%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-5.dcm",
+      "id": 5,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-5.dcm?AWSAccessKeyId=testing&Signature=ps125IRPgD1MzCJ3SB%2BmvMX1ZsU%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-6.dcm",
+      "id": 6,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-6.dcm?AWSAccessKeyId=testing&Signature=fGeUe%2BGG4qTXgOAYqmOV%2BycEuD4%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-7.dcm",
+      "id": 7,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-7.dcm?AWSAccessKeyId=testing&Signature=7O0GDY5vHy%2Fby2sJejRalBtAW4s%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-8.dcm",
+      "id": 8,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-8.dcm?AWSAccessKeyId=testing&Signature=6qs2JEja4IxkviJImkSDe475occ%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-9.dcm",
+      "id": 9,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-9.dcm?AWSAccessKeyId=testing&Signature=VcyGyA%2Fkxdj6Q6MkYBJB6Ylekss%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-10.dcm",
+      "id": 10,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-10.dcm?AWSAccessKeyId=testing&Signature=JLzOIC6IuE0uM1WXlAQ%2FCH45F5s%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-11.dcm",
+      "id": 11,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-11.dcm?AWSAccessKeyId=testing&Signature=bKuJxYLyPjC9%2F3Wr%2FD2GTLXpcnQ%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-12.dcm",
+      "id": 12,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-12.dcm?AWSAccessKeyId=testing&Signature=P8PmN2U1n9zDO93aJY97giCPNak%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-13.dcm",
+      "id": 13,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-13.dcm?AWSAccessKeyId=testing&Signature=ZGidEwjN16Zv3%2BXo51kgySb%2BFwY%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-14.dcm",
+      "id": 14,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-14.dcm?AWSAccessKeyId=testing&Signature=vhfoW2kmcRYXb%2FceMT9J5sf7%2FI8%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-15.dcm",
+      "id": 15,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-15.dcm?AWSAccessKeyId=testing&Signature=v5t0IwAVhKPXsnScppVw4wophEg%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-16.dcm",
+      "id": 16,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-16.dcm?AWSAccessKeyId=testing&Signature=lRmDP1g%2FMp7VdvV8PhEU346noyo%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-17.dcm",
+      "id": 17,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-17.dcm?AWSAccessKeyId=testing&Signature=lSBj2dqoi%2Fb8dNZQghDOskSD%2Bmg%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-18.dcm",
+      "id": 18,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-18.dcm?AWSAccessKeyId=testing&Signature=3YGBexpILN3UZfa0Y7AGquQuSV0%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-19.dcm",
+      "id": 19,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-19.dcm?AWSAccessKeyId=testing&Signature=PA0gkZp%2FHMNbkI6btN9192Oe9xI%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-20.dcm",
+      "id": 20,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-20.dcm?AWSAccessKeyId=testing&Signature=x5f%2BDa7OunyeoC8Z3mnwadOp1FM%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-21.dcm",
+      "id": 21,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-21.dcm?AWSAccessKeyId=testing&Signature=yHM2Zn%2Bk%2F5H09chcVDGyH%2BGblnY%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-22.dcm",
+      "id": 22,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-22.dcm?AWSAccessKeyId=testing&Signature=M9yyRtIJZTAzqgUDRRn6Mn3uHWA%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-23.dcm",
+      "id": 23,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-23.dcm?AWSAccessKeyId=testing&Signature=30NuoZ9iO8DaOwNIa8RcCetovx4%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-24.dcm",
+      "id": 24,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-24.dcm?AWSAccessKeyId=testing&Signature=dY8pEn7IzeM1X1npkm0I%2B0kocqA%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-25.dcm",
+      "id": 25,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-25.dcm?AWSAccessKeyId=testing&Signature=2DLiDoGAk1zorfPjc7piXZVxOm4%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-26.dcm",
+      "id": 26,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-26.dcm?AWSAccessKeyId=testing&Signature=BNjWpwPmnNdrONQle%2BeZAOezZoM%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-27.dcm",
+      "id": 27,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-27.dcm?AWSAccessKeyId=testing&Signature=IeO8Ra%2FG504FqC1pJuFSpU%2B%2FYIg%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-28.dcm",
+      "id": 28,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-28.dcm?AWSAccessKeyId=testing&Signature=ZTcB4OXh5iUdHwk9r%2Fv5sh%2BYr6c%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-29.dcm",
+      "id": 29,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-29.dcm?AWSAccessKeyId=testing&Signature=0yDJ5ZgfyN7wxLKl%2Bgo8o0Unt08%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-30.dcm",
+      "id": 30,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-30.dcm?AWSAccessKeyId=testing&Signature=pIey%2FI04LArroSrwYhU2zgsU53M%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-31.dcm",
+      "id": 31,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-31.dcm?AWSAccessKeyId=testing&Signature=wAcFTAdAcl%2FDpjozVnNRoXXw83Y%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-32.dcm",
+      "id": 32,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-32.dcm?AWSAccessKeyId=testing&Signature=uZLhHcdHtFrpjKxytesB73Z8M1Y%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-33.dcm",
+      "id": 33,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-33.dcm?AWSAccessKeyId=testing&Signature=93svzH8MNXyVPho4zONzillRTGo%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-34.dcm",
+      "id": 34,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-34.dcm?AWSAccessKeyId=testing&Signature=NRMGzYM3KDgErCapvNWpphvoNlQ%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-35.dcm",
+      "id": 35,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-35.dcm?AWSAccessKeyId=testing&Signature=d8ABjzL4mWiJbXJgvQJN6Mr6rvA%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-36.dcm",
+      "id": 36,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-36.dcm?AWSAccessKeyId=testing&Signature=VNuXFPCozYwqcIYtDPpSvJYKBYI%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-37.dcm",
+      "id": 37,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-37.dcm?AWSAccessKeyId=testing&Signature=aqbp4rUOIoyU%2BYQz59O1P2Fd3pA%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-38.dcm",
+      "id": 38,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-38.dcm?AWSAccessKeyId=testing&Signature=MFr792ucKVb5YEyQlWkaAeTcuwc%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-39.dcm",
+      "id": 39,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-39.dcm?AWSAccessKeyId=testing&Signature=gUOellYpcLdgfYbYKQRJOjrmA6k%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-40.dcm",
+      "id": 40,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-40.dcm?AWSAccessKeyId=testing&Signature=M4ETqUJ1oh01rB6HR87J9Kd6zfw%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-41.dcm",
+      "id": 41,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-41.dcm?AWSAccessKeyId=testing&Signature=Y24dwpd52NxEE3zovQE6IzkrMEs%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-42.dcm",
+      "id": 42,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-42.dcm?AWSAccessKeyId=testing&Signature=6lP29ffftN2jEFTEkQCWJKy78Jk%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-43.dcm",
+      "id": 43,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-43.dcm?AWSAccessKeyId=testing&Signature=yzrGPJ5HIjgD2%2Ffa77X0%2FyER0J0%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-44.dcm",
+      "id": 44,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-44.dcm?AWSAccessKeyId=testing&Signature=58Nl6%2FPgUygL820IUJbUvPiPp38%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-45.dcm",
+      "id": 45,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-45.dcm?AWSAccessKeyId=testing&Signature=6RvXHSVZ2VorCB4USV4ois4h%2FmA%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-46.dcm",
+      "id": 46,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-46.dcm?AWSAccessKeyId=testing&Signature=8BEz23M429tykDWMZQ09DaTdSVA%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-47.dcm",
+      "id": 47,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-47.dcm?AWSAccessKeyId=testing&Signature=vCT%2B1csOCwo5spy2az7SbPu3zUI%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-48.dcm",
+      "id": 48,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-48.dcm?AWSAccessKeyId=testing&Signature=o1b%2BppVM1bAzGVs9kvX583qrWNk%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-49.dcm",
+      "id": 49,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-49.dcm?AWSAccessKeyId=testing&Signature=OADs6T%2FO%2BFLKiZBDr3S4WNZ43OM%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-50.dcm",
+      "id": 50,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-50.dcm?AWSAccessKeyId=testing&Signature=ZtSzpEOUkeegWIfwlZy441IwCCA%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-51.dcm",
+      "id": 51,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-51.dcm?AWSAccessKeyId=testing&Signature=JpZfdcryU%2B%2F1Lc%2BLtqZy7vI%2BtN8%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-52.dcm",
+      "id": 52,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-52.dcm?AWSAccessKeyId=testing&Signature=n%2FcQlY5EH9eiEBH1PR4Jd7F10YQ%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-53.dcm",
+      "id": 53,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-53.dcm?AWSAccessKeyId=testing&Signature=vxYDgry38zvUs0ap2LH%2BlvBn%2B1c%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-54.dcm",
+      "id": 54,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-54.dcm?AWSAccessKeyId=testing&Signature=H9pJywVotbF6ExtNBeBy9Awk2Ds%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-55.dcm",
+      "id": 55,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-55.dcm?AWSAccessKeyId=testing&Signature=1Gq%2FePZkIEjuFAwemfVFWnF7YFw%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-56.dcm",
+      "id": 56,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-56.dcm?AWSAccessKeyId=testing&Signature=w4MJ3X0iXp9xszVIJL4jQt%2BKmDo%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-57.dcm",
+      "id": 57,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-57.dcm?AWSAccessKeyId=testing&Signature=TynfMta3hg6W3Va%2FOsx3NQsRCeM%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-58.dcm",
+      "id": 58,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-58.dcm?AWSAccessKeyId=testing&Signature=XWGRfWuZsNrp90xaQzO56ZfR%2FA8%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-59.dcm",
+      "id": 59,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-59.dcm?AWSAccessKeyId=testing&Signature=xQzVVSzg3kHfNriuTwaAqpf2iu0%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-60.dcm",
+      "id": 60,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-60.dcm?AWSAccessKeyId=testing&Signature=yNcZdj15Oic2EN31LxMpNOChxQk%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-61.dcm",
+      "id": 61,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-61.dcm?AWSAccessKeyId=testing&Signature=GLr%2F%2FPieFkvML3e9tTkbc%2FM2sw4%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-62.dcm",
+      "id": 62,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-62.dcm?AWSAccessKeyId=testing&Signature=cKDvqlaYykJuqqipbH6ls3NMc24%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-63.dcm",
+      "id": 63,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-63.dcm?AWSAccessKeyId=testing&Signature=OCzYmWlMZvhuID%2F1GzK9aAcnZBU%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-64.dcm",
+      "id": 64,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-64.dcm?AWSAccessKeyId=testing&Signature=5LPL%2BaIga76n2G4wROcokeb7TLM%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-65.dcm",
+      "id": 65,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-65.dcm?AWSAccessKeyId=testing&Signature=i0Vyu08MTJYXRpZ4aKvpOP0CWY4%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-66.dcm",
+      "id": 66,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-66.dcm?AWSAccessKeyId=testing&Signature=nTpduNohqTlTnEHLl3QtKEXXjTM%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-67.dcm",
+      "id": 67,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-67.dcm?AWSAccessKeyId=testing&Signature=hmIQE5Cx2x53%2BrPsMIsR5SKjnrA%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-68.dcm",
+      "id": 68,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-68.dcm?AWSAccessKeyId=testing&Signature=BycUdGQX7%2Ffh1%2FiaQc68ZqYRO%2F8%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-69.dcm",
+      "id": 69,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-69.dcm?AWSAccessKeyId=testing&Signature=DWzczJCxNODS0Y1XVW3Q7BXEBdg%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-70.dcm",
+      "id": 70,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-70.dcm?AWSAccessKeyId=testing&Signature=ukiPuqWXowk%2FAi4ivmfU1BJfNaQ%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-71.dcm",
+      "id": 71,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-71.dcm?AWSAccessKeyId=testing&Signature=U0tzLtYfvrQK5AfxWolEjeTx4Go%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-72.dcm",
+      "id": 72,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-72.dcm?AWSAccessKeyId=testing&Signature=Rv7fyjlGw1iJfGwik5%2BhhGgHOuM%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-73.dcm",
+      "id": 73,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-73.dcm?AWSAccessKeyId=testing&Signature=UeVsAoU5o%2Btsutnj9MPAVgKhCuY%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-74.dcm",
+      "id": 74,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-74.dcm?AWSAccessKeyId=testing&Signature=ASsy5duR%2FY8W4JQMPwzDd9JCkgE%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-75.dcm",
+      "id": 75,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-75.dcm?AWSAccessKeyId=testing&Signature=XyY0vPxl0AOdZx79s15Pn0sWc20%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-76.dcm",
+      "id": 76,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-76.dcm?AWSAccessKeyId=testing&Signature=BeUNLjxieTKTdL9%2Bs%2F4yaSduMnU%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-77.dcm",
+      "id": 77,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-77.dcm?AWSAccessKeyId=testing&Signature=AuwFedxhixASaq0MP11zFr9aZ2E%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-78.dcm",
+      "id": 78,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-78.dcm?AWSAccessKeyId=testing&Signature=roScXMwRLu32to4wxw4VdC0wXYc%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-79.dcm",
+      "id": 79,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-79.dcm?AWSAccessKeyId=testing&Signature=23AYsaznvybpF0Eb8H8rU1KU9RU%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-80.dcm",
+      "id": 80,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-80.dcm?AWSAccessKeyId=testing&Signature=E5wL50EPkOnwOeD3ZxlqV8krXnU%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-81.dcm",
+      "id": 81,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-81.dcm?AWSAccessKeyId=testing&Signature=5tNXfH3z4D8tW7552MWqPmYK%2BVw%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-82.dcm",
+      "id": 82,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-82.dcm?AWSAccessKeyId=testing&Signature=xj5%2BVZVbC1wpGSCIrjMToCGnNMA%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-83.dcm",
+      "id": 83,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-83.dcm?AWSAccessKeyId=testing&Signature=mQm%2BWwkQlX%2FuqH8%2FdPESXXXL8w8%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-84.dcm",
+      "id": 84,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-84.dcm?AWSAccessKeyId=testing&Signature=FNoL%2FIF5DOtsrGRHi5jA6UODK7I%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-85.dcm",
+      "id": 85,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-85.dcm?AWSAccessKeyId=testing&Signature=WGRssjnZcyDVSa4fSTg4FS%2FJx%2BU%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-86.dcm",
+      "id": 86,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-86.dcm?AWSAccessKeyId=testing&Signature=XlA5D3ayxcKVIKKHpbL7UZfEYE4%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-87.dcm",
+      "id": 87,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-87.dcm?AWSAccessKeyId=testing&Signature=3MaO5vWJUK5i68QrZYVne5vIozo%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-88.dcm",
+      "id": 88,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-88.dcm?AWSAccessKeyId=testing&Signature=2YRjZU4%2Bml8HBdZEtmU%2BSbl8AWI%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-89.dcm",
+      "id": 89,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-89.dcm?AWSAccessKeyId=testing&Signature=BkxQyEJXMVKKAeBLGB8Na4EciRc%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-90.dcm",
+      "id": 90,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-90.dcm?AWSAccessKeyId=testing&Signature=NhREbcQUBMwwNlrqFZF%2Fwjdq1BA%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-91.dcm",
+      "id": 91,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-91.dcm?AWSAccessKeyId=testing&Signature=wY1Sl8j8lpzGV7%2BoJFPsrV5W2l8%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-92.dcm",
+      "id": 92,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-92.dcm?AWSAccessKeyId=testing&Signature=SQ9%2BCpyHs6BHb%2Fn9FacEYL69gVc%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-93.dcm",
+      "id": 93,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-93.dcm?AWSAccessKeyId=testing&Signature=G3D5jgGblcd2gY%2BalJJ%2BLLl1s7c%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-94.dcm",
+      "id": 94,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-94.dcm?AWSAccessKeyId=testing&Signature=bX0vRpB9vrMotdnyK3tMpmmM12A%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-95.dcm",
+      "id": 95,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-95.dcm?AWSAccessKeyId=testing&Signature=e3Ej69V83YdcyvVLKw%2FDWzihS1k%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-96.dcm",
+      "id": 96,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-96.dcm?AWSAccessKeyId=testing&Signature=YuURf%2FbOcVdUBYHaiBZG9AaUwjg%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-97.dcm",
+      "id": 97,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-97.dcm?AWSAccessKeyId=testing&Signature=c8vCGTcdkgF%2BAT2Ie7xrshYxMSo%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-98.dcm",
+      "id": 98,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-98.dcm?AWSAccessKeyId=testing&Signature=11HOYJnPW16w47yzxyhexUJDbJU%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-99.dcm",
+      "id": 99,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-99.dcm?AWSAccessKeyId=testing&Signature=mix0aWsBoUIYW%2BIxh3%2FtZHmM7e8%3D&x-amz-security-token=testing&Expires=1635976800"
+    },
+    {
+      "created_by": "test-user",
+      "created_timestamp": 1635926694,
+      "filename": "sample-100.dcm",
+      "id": 100,
+      "size": 256000,
+      "tags": [
+        {
+          "id": 1,
+          "name": "foo"
+        },
+        {
+          "id": 2,
+          "name": "bar"
+        },
+        {
+          "id": 3,
+          "name": "baz"
+        }
+      ],
+      "uploaded_timestamp": 1635926694,
+      "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/archive/2021/11/03/19-06-%7Bid%7D/sample-100.dcm?AWSAccessKeyId=testing&Signature=X8GL%2FukOtU4a%2FaoQEoDKqVB00Hw%3D&x-amz-security-token=testing&Expires=1635976800"
+    }
+  ]
+}
