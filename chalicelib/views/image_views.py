@@ -55,9 +55,12 @@ def create_image():
     validate_payload(image_routes, UPDATE_PARAMS)
     payload = image_routes.current_request.json_body
     session = get_session()
+
     tag_records = _retrieve_tag_records(payload["tags"], session)
+
+    # TODO: when deployed, grab the user id/name from their JWT
     return Image.prepare_upload_url(
-        session, "x", payload["filename"], payload["size"], tag_records
+        session, "user-name", payload["filename"], payload["size"], tag_records
     ).to_response()
 
 
