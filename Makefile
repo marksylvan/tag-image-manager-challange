@@ -4,16 +4,16 @@ STACK_PREFIX = tagged-image
 SERVICE_STACK_NAME = $(STACK_PREFIX)-$(STAGE)-service
 INFRA_STACK_NAME = $(STACK_PREFIX)-$(STAGE)-infra
 
-ifeq ($(CI), true)
-  AWS = aws
-  CHALICE = poetry run chalice
-  POETRY = poetry
-  PYTHON = python
-else
+ifeq ($(USE_AWS_VAULT), true)
   AWS = aws-vault exec $(PROFILE) --no-session -- aws
   CHALICE = aws-vault exec $(PROFILE) -- poetry run chalice
   POETRY = aws-vault exec $(PROFILE) -- poetry
   PYTHON = aws-vault exec $(PROFILE) -- python
+else
+  AWS = aws
+  CHALICE = poetry run chalice
+  POETRY = poetry
+  PYTHON = python
 endif
 
 deploy-infra: cloudformation/infra.yaml
@@ -49,9 +49,11 @@ fix:
 lint:
 	poetry run black app.py chalicelib/
 
-# Export requirements for lambda
 requirements.txt: ./poetry.lock
 	poetry export --without-hashes | grep -v ' @ ' > $@
+
+run:
+	$(POETRY) run chalice local
 
 # Upload the package to S3
 packaged/packaged.yaml: packaged/sam.yaml
@@ -77,6 +79,9 @@ packaged/sam.yaml: requirements.txt
 
 smoketest:
 	poetry run pytest -svv tests/smoke --durations=0
+
+tables:
+	python -m scripts.make_tables
 
 tests: lint unittests
 

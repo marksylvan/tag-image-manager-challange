@@ -1,6 +1,7 @@
 # project specific ones
 packaged
 .chalice/deployments
+*.sqlite
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

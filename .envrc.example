@@ -1,3 +1,9 @@
 # set values here then rename to .envrc for direnv
+export AWS_DEFAULT_REGION='ap-southeast-2'
+export AWS_REGION='ap-southeast-2'
+export BUCKET_NAME='some-bucket'
 export COGNITO_POOL_ARN=set-me
+# DB_URL could be postgres e.g. 'postgresql+pg8000://user:password@host/database'
+export DB_URL='sqlite+pysqlite:///db.sqlite'
 export PROFILE=set-me
+export USE_AWS_VAULT=false
