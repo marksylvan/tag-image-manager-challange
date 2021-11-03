@@ -11,7 +11,11 @@ from chalicelib.validation import (
     validate_payload,
     validate_query_params,
 )
-from chalicelib.views.helpers import model_by_id, simple_page_view
+from chalicelib.views.helpers import (
+    model_by_id,
+    retrieve_tag_records,
+    simple_page_view,
+)
 from chalicelib.views.tag_views import PAGE_PARAMS
 
 image_routes = Blueprint(__name__)
@@ -25,14 +29,6 @@ POST_PARAMS = [
     ValidationParam("size", int, True, min=1),
     ValidationParam("tags", typing.List, True, list_type=str),
 ]
-
-
-def _retrieve_tag_records(new_tags: typing.List[str], session: Session):
-    tag_records: typing.List[Tag] = []
-
-    for tag in new_tags:
-        tag_records.append(get_or_create(session, Tag, name=tag))
-    return tag_records
 
 
 @image_routes.route(
@@ -52,11 +48,11 @@ def get_images():
     "/", methods=["POST"], authorizer=cognito_authorizer, cors=True
 )
 def create_image():
-    validate_payload(image_routes, UPDATE_PARAMS)
+    validate_payload(image_routes, POST_PARAMS)
     payload = image_routes.current_request.json_body
     session = get_session()
 
-    tag_records = _retrieve_tag_records(payload["tags"], session)
+    tag_records = retrieve_tag_records(payload["tags"], session)
 
     # TODO: when deployed, grab the user id/name from their JWT
     return Image.prepare_upload_url(
@@ -81,7 +77,7 @@ def update_image(image_id: str):
 
     session = get_session()
     image: Image = model_by_id(image_id, session, Image)
-    tag_records = _retrieve_tag_records(new_tags, session)
+    tag_records = retrieve_tag_records(new_tags, session)
 
     image.tags = tag_records
     session.commit()

@@ -3,8 +3,8 @@ import typing
 from chalice.app import BadRequestError, NotFoundError
 from sqlalchemy.orm.session import Session
 
-from chalicelib.db import get
-from chalicelib.models import Base
+from chalicelib.db import get, get_or_create
+from chalicelib.models import Base, Tag
 
 
 def model_by_id(
@@ -21,6 +21,14 @@ def model_by_id(
         return instance
 
     raise NotFoundError()
+
+
+def retrieve_tag_records(new_tags: typing.List[str], session: Session):
+    tag_records: typing.List[Tag] = []
+
+    for tag in new_tags:
+        tag_records.append(get_or_create(session, Tag, name=tag))
+    return tag_records
 
 
 def simple_page_view(payload, session, model, sort_by):

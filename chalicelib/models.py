@@ -51,6 +51,39 @@ class Image(Base):
         return f"{date_part}-{uuid4()}/"
 
     @classmethod
+    def from_upload(
+        cls,
+        session: Session,
+        created_by: str,
+        filename: str,
+        image_data: bytes,
+        tags: List[Tag],
+    ) -> Image:
+        size = len(image_data)
+
+        image = cls(
+            filename=filename,
+            created_by=created_by,
+            size=size,
+            tags=tags,
+            created_timestamp=int(time.time()),
+        )
+        image.prefix = image.generate_prefix()
+        s3_client: S3Client = boto3.client("s3")
+
+        # # TODO: best practice to set the content-type when uploading the object, otherwise it's application/octet-stream
+        # s3_client.put_object(
+        #     Bucket=cls.BUCKET_NAME,
+        #     Key=f"{image.prefix}/{image.filename}",
+        #     Body=image_data,
+        # )
+
+        image.upload_timestamp = int(time.time())
+        session.add(image)
+        session.commit()
+        return image
+
+    @classmethod
     def prepare_upload_url(
         cls,
         session: Session,

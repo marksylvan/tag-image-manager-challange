@@ -1,15 +1,19 @@
 {
-  "created_by": "foo",
-  "created_timestamp": 0,
-  "filename": "foo.dcm",
-  "id": 0,
-  "size": 0,
+  "created_by": "user-id",
+  "created_timestamp": 1635973200,
+  "filename": "image-00000.dcm",
+  "id": 1,
+  "size": 53936,
   "tags": [
     {
-      "id": 0,
-      "name": "thing"
+      "id": 1,
+      "name": "foo"
+    },
+    {
+      "id": 2,
+      "name": "bar"
     }
   ],
-  "uploaded_timestamp": null,
-  "url": null
+  "uploaded_timestamp": 1635973200,
+  "url": "https://tagged-image-dev-infra-assetbucket-k5rhrhye7grw.s3.amazonaws.com/2021/11/03/21-00-fa0fa625-f356-444c-bc17-979032980d65/image-00000.dcm?AWSAccessKeyId=testing&Signature=sFJh3ztCdgbw1Ed630TszCBXlDA%3D&x-amz-security-token=testing&Expires=1635976800"
 }
