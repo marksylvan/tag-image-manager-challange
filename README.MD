@@ -45,6 +45,34 @@ make tables # if the database is new
 curl localhost:8000/v1/tags | jq
 ```
 
+## Endpoints
+
+There is an endpoint available at `https://11t1y7xqdi.execute-api.ap-southeast-2.amazonaws.com/api/v1` and it requires a valid Cognito token to access. 
+
+Example usage:
+
+```shell
+export COGNITO_CLIENT_ID=...
+export COGNITO_PASSWORD=...
+export COGNITO_POOL_ARN=...
+export COGNITO_USERNAME=...
+export ENDPOINT='https://11t1y7xqdi.execute-api.ap-southeast-2.amazonaws.com/api/v1'
+
+curl "${ENDPOINT}/tags" \
+  --header 'content-type: application/json' \
+  --header "Authorization: $(./scripts/cognito-id-token.py)" | jq
+
+curl "${ENDPOINT}/tags" \
+  -XPOST \
+  --header 'content-type: application/json' \
+  --header "Authorization: $(./scripts/cognito-id-token.py)" \
+  --data-binary @- << EOF | jq
+{
+  "name": "some new tag"
+}
+EOF
+```
+
 ## Deploy
 
 Deploy Infra:
