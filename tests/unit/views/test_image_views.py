@@ -3,12 +3,13 @@ from typing import List, Optional
 from unittest import mock
 
 import pytest
-from app import app
 from chalice.test import Client
-from chalicelib.db import get_or_create
-from chalicelib.models import Image, Tag
 from freezegun import freeze_time
 from sqlalchemy.orm.session import Session
+
+from app import app
+from chalicelib.db import get_or_create
+from chalicelib.models import Image, Tag
 from tests.helpers import dict_assert
 
 
@@ -66,19 +67,23 @@ def test_images(db_session: Session, snapshot):
 
 
 @freeze_time("2021-11-03 21:00:00")
-def test_post_image(snapshot):
+def test_post_image(db_session: Session, snapshot):
     with Client(app) as client:
         response = client.http.post(
             "/v1/images",
             headers={"Content-Type": "application/json"},
             body=json.dumps(
-                {"filename": "test.dcm", "size": 1234, "tags": ["foo", "bar"]}
+                {"filename": "test.dcm", "size": 1234, "tags": ["bar", "baz"]}
             ),
         ).json_body
 
         assert isinstance(response["id"], int)
         # TODO: mock out uuid4() function on chaliclib.models and fix this test
         assert response["upload_url"].startswith("https://")
+
+        image_id = response["id"]
+        image = db_session.query(Image).filter_by(id=image_id).first()
+        assert [t.name for t in image.tags] == ["bar", "baz"]
 
 
 @freeze_time("2021-11-03 21:00:00")

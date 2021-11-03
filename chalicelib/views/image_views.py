@@ -1,6 +1,7 @@
 import typing
 
 from chalice import Blueprint
+from sqlalchemy.orm.session import Session
 
 from chalicelib.authorizer import cognito_authorizer
 from chalicelib.db import get_or_create, get_session
@@ -26,6 +27,14 @@ POST_PARAMS = [
 ]
 
 
+def _retrieve_tag_records(new_tags: typing.List[str], session: Session):
+    tag_records: typing.List[Tag] = []
+
+    for tag in new_tags:
+        tag_records.append(get_or_create(session, Tag, name=tag))
+    return tag_records
+
+
 @image_routes.route(
     "/", methods=["GET"], authorizer=cognito_authorizer, cors=True
 )
@@ -46,8 +55,9 @@ def create_image():
     validate_payload(image_routes, UPDATE_PARAMS)
     payload = image_routes.current_request.json_body
     session = get_session()
+    tag_records = _retrieve_tag_records(payload["tags"], session)
     return Image.prepare_upload_url(
-        session, "x", payload["filename"], payload["size"], []
+        session, "x", payload["filename"], payload["size"], tag_records
     ).to_response()
 
 
@@ -68,10 +78,7 @@ def update_image(image_id: str):
 
     session = get_session()
     image: Image = model_by_id(image_id, session, Image)
-    tag_records: typing.List[Tag] = []
-
-    for tag in new_tags:
-        tag_records.append(get_or_create(session, Tag, name=tag))
+    tag_records = _retrieve_tag_records(new_tags, session)
 
     image.tags = tag_records
     session.commit()
