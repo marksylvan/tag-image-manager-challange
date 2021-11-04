@@ -30,7 +30,7 @@ Run the tests:
 make tests
 ```
 
-Run locally (no auth required):
+## Run locally (no auth required)
 
 ```shell
 # use direnv + .envrc to ensure your BUCKET_NAME and DB_URL are set
@@ -42,10 +42,19 @@ In another shell:
 
 ```shell
 make tables # if the database is new
+curl "${ENDPOINT}/tags" \
+  -XPOST \
+  --header 'content-type: application/json' \
+  --header "Authorization: $(./scripts/cognito-id-token.py)" \
+  --data-binary @- << EOF | jq
+{
+  "name": "some new tag"
+}
+
 curl localhost:8000/v1/tags | jq
 ```
 
-## Endpoints
+## Dev Endpoint (auth required)
 
 There is an endpoint available at `https://11t1y7xqdi.execute-api.ap-southeast-2.amazonaws.com/api/v1` and it requires a valid Cognito token to access. 
 

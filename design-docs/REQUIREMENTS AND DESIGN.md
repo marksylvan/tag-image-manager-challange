@@ -88,7 +88,7 @@ The Search endpoint (`/v1/images`) is paging and allows you to specify start/end
 [2]: https://www.dicomlibrary.com/meddream/?study=1.2.826.0.1.3680043.8.1055.1.20111102150758591.92402465.76095170
 [3]: https://www.dicomlibrary.com/meddream/?study=1.2.826.0.1.3680043.8.1055.1.20111103111148288.98361414.79379639
 [4]: https://www.dicomlibrary.com/meddream/?study=1.2.826.0.1.3680043.8.1055.1.20111103112244831.40200514.30965937
-[5]: design-docs/openapi/tagged-image-manager.yml
+[5]: ./openapi/tagged-image-manager.yml
 [6]: https://marketplace.visualstudio.com/items?itemName=42Crunch.vscode-openapi
-[7]: design-docs/openapi/generated-tagged-image-manager.md
+[7]: ./openapi/generated-tagged-image-manager.md
 [8]: https://c4model.com/#ComponentDiagram
